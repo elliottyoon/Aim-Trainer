@@ -11,6 +11,4 @@ public:
 
 private:
     Model const& model_;
-    ge211::Text_sprite explanation_;
-    ge211::Font sans28_{"sans.ttf", 28};
 };

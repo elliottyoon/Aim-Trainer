@@ -9,6 +9,5 @@ TEST_CASE("example test (TODO: replace this)")
 //
 // TODO: Write preliminary model tests.
 //
-// These tests should demonstrate at least six of the functional
-// requirements.
+// These tests should demonstrate your functional requirements.
 //

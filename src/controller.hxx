@@ -4,6 +4,7 @@
 #include "view.hxx"
 
 #include <ge211.hxx>
+using Dims = ge211::Dims<int>;
 
 class Controller : public ge211::Abstract_game
 {
@@ -15,7 +16,9 @@ protected:
     //  - on_mouse_move for mouse tracking
     void on_mouse_move(Position) override;
 
+    // overridden window methods
     std::string initial_window_title() const override;
+    Dims initial_window_dimensions() const override;
 
 private:
     Model model_;

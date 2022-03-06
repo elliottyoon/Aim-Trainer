@@ -37,5 +37,11 @@ Controller::on_mouse_move(Position posn) {
 std::string
 Controller::initial_window_title() const
 {
-    return "hi";
+    return "Aim Trainer";
+}
+
+Dims
+Controller::initial_window_dimensions() const
+{
+    return {500,500}; // TODO: Change magic number
 }

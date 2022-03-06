@@ -89,25 +89,14 @@ install/fast: preinstall/fast
 	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-.PHONY : edit_cache/fast
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -131,14 +120,25 @@ test:
 test/fast: test
 .PHONY : test/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+.PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -185,17 +185,17 @@ model_test/fast:
 .PHONY : model_test/fast
 
 #=============================================================================
-# Target rules for targets named motion-planning-example
+# Target rules for targets named game
 
 # Build rule for target.
-motion-planning-example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motion-planning-example
-.PHONY : motion-planning-example
+game: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game
+.PHONY : game
 
 # fast build rule for target.
-motion-planning-example/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/build
-.PHONY : motion-planning-example/fast
+game/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
+.PHONY : game/fast
 
 #=============================================================================
 # Target rules for targets named catch
@@ -236,39 +236,39 @@ fireworks/fast:
 	$(MAKE) $(MAKESILENT) -f .cs211/lib/ge211/example/CMakeFiles/fireworks.dir/build.make .cs211/lib/ge211/example/CMakeFiles/fireworks.dir/build
 .PHONY : fireworks/fast
 
-src/character.o: src/character.cxx.o
-.PHONY : src/character.o
+src/ball.o: src/ball.cxx.o
+.PHONY : src/ball.o
 
 # target to build an object file
-src/character.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/character.cxx.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/character.cxx.o
-.PHONY : src/character.cxx.o
+src/ball.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/ball.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/ball.cxx.o
+.PHONY : src/ball.cxx.o
 
-src/character.i: src/character.cxx.i
-.PHONY : src/character.i
+src/ball.i: src/ball.cxx.i
+.PHONY : src/ball.i
 
 # target to preprocess a source file
-src/character.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/character.cxx.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/character.cxx.i
-.PHONY : src/character.cxx.i
+src/ball.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/ball.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/ball.cxx.i
+.PHONY : src/ball.cxx.i
 
-src/character.s: src/character.cxx.s
-.PHONY : src/character.s
+src/ball.s: src/ball.cxx.s
+.PHONY : src/ball.s
 
 # target to generate assembly for a file
-src/character.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/character.cxx.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/character.cxx.s
-.PHONY : src/character.cxx.s
+src/ball.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/ball.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/ball.cxx.s
+.PHONY : src/ball.cxx.s
 
 src/controller.o: src/controller.cxx.o
 .PHONY : src/controller.o
 
 # target to build an object file
 src/controller.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/controller.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/controller.cxx.o
 .PHONY : src/controller.cxx.o
 
 src/controller.i: src/controller.cxx.i
@@ -276,7 +276,7 @@ src/controller.i: src/controller.cxx.i
 
 # target to preprocess a source file
 src/controller.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/controller.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/controller.cxx.i
 .PHONY : src/controller.cxx.i
 
 src/controller.s: src/controller.cxx.s
@@ -284,7 +284,7 @@ src/controller.s: src/controller.cxx.s
 
 # target to generate assembly for a file
 src/controller.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/controller.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/controller.cxx.s
 .PHONY : src/controller.cxx.s
 
 src/main.o: src/main.cxx.o
@@ -292,7 +292,7 @@ src/main.o: src/main.cxx.o
 
 # target to build an object file
 src/main.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/main.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cxx.o
 .PHONY : src/main.cxx.o
 
 src/main.i: src/main.cxx.i
@@ -300,7 +300,7 @@ src/main.i: src/main.cxx.i
 
 # target to preprocess a source file
 src/main.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/main.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cxx.i
 .PHONY : src/main.cxx.i
 
 src/main.s: src/main.cxx.s
@@ -308,7 +308,7 @@ src/main.s: src/main.cxx.s
 
 # target to generate assembly for a file
 src/main.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/main.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cxx.s
 .PHONY : src/main.cxx.s
 
 src/model.o: src/model.cxx.o
@@ -317,7 +317,7 @@ src/model.o: src/model.cxx.o
 # target to build an object file
 src/model.cxx.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/model.cxx.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/model.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/model.cxx.o
 .PHONY : src/model.cxx.o
 
 src/model.i: src/model.cxx.i
@@ -326,7 +326,7 @@ src/model.i: src/model.cxx.i
 # target to preprocess a source file
 src/model.cxx.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/model.cxx.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/model.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/model.cxx.i
 .PHONY : src/model.cxx.i
 
 src/model.s: src/model.cxx.s
@@ -335,7 +335,7 @@ src/model.s: src/model.cxx.s
 # target to generate assembly for a file
 src/model.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/model.cxx.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/model.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/model.cxx.s
 .PHONY : src/model.cxx.s
 
 src/view.o: src/view.cxx.o
@@ -343,7 +343,7 @@ src/view.o: src/view.cxx.o
 
 # target to build an object file
 src/view.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/view.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/view.cxx.o
 .PHONY : src/view.cxx.o
 
 src/view.i: src/view.cxx.i
@@ -351,7 +351,7 @@ src/view.i: src/view.cxx.i
 
 # target to preprocess a source file
 src/view.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/view.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/view.cxx.i
 .PHONY : src/view.cxx.i
 
 src/view.s: src/view.cxx.s
@@ -359,7 +359,7 @@ src/view.s: src/view.cxx.s
 
 # target to generate assembly for a file
 src/view.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion-planning-example.dir/build.make CMakeFiles/motion-planning-example.dir/src/view.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/view.cxx.s
 .PHONY : src/view.cxx.s
 
 test/model_test.o: test/model_test.cxx.o
@@ -401,12 +401,12 @@ help:
 	@echo "... test"
 	@echo "... catch"
 	@echo "... fireworks"
+	@echo "... game"
 	@echo "... ge211"
 	@echo "... model_test"
-	@echo "... motion-planning-example"
-	@echo "... src/character.o"
-	@echo "... src/character.i"
-	@echo "... src/character.s"
+	@echo "... src/ball.o"
+	@echo "... src/ball.i"
+	@echo "... src/ball.s"
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"

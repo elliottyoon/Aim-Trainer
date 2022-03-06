@@ -83,19 +83,19 @@ CMakeFiles/model_test.dir/src/model.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/model_test.dir/src/model.cxx.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elliottyoon/Desktop/CS211/AimTrainer/src/model.cxx -o CMakeFiles/model_test.dir/src/model.cxx.s
 
-CMakeFiles/model_test.dir/src/character.cxx.o: CMakeFiles/model_test.dir/flags.make
-CMakeFiles/model_test.dir/src/character.cxx.o: ../src/character.cxx
-CMakeFiles/model_test.dir/src/character.cxx.o: CMakeFiles/model_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/model_test.dir/src/character.cxx.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/src/character.cxx.o -MF CMakeFiles/model_test.dir/src/character.cxx.o.d -o CMakeFiles/model_test.dir/src/character.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/character.cxx
+CMakeFiles/model_test.dir/src/ball.cxx.o: CMakeFiles/model_test.dir/flags.make
+CMakeFiles/model_test.dir/src/ball.cxx.o: ../src/ball.cxx
+CMakeFiles/model_test.dir/src/ball.cxx.o: CMakeFiles/model_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/model_test.dir/src/ball.cxx.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/src/ball.cxx.o -MF CMakeFiles/model_test.dir/src/ball.cxx.o.d -o CMakeFiles/model_test.dir/src/ball.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.cxx
 
-CMakeFiles/model_test.dir/src/character.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/model_test.dir/src/character.cxx.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/elliottyoon/Desktop/CS211/AimTrainer/src/character.cxx > CMakeFiles/model_test.dir/src/character.cxx.i
+CMakeFiles/model_test.dir/src/ball.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/model_test.dir/src/ball.cxx.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.cxx > CMakeFiles/model_test.dir/src/ball.cxx.i
 
-CMakeFiles/model_test.dir/src/character.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/model_test.dir/src/character.cxx.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elliottyoon/Desktop/CS211/AimTrainer/src/character.cxx -o CMakeFiles/model_test.dir/src/character.cxx.s
+CMakeFiles/model_test.dir/src/ball.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/model_test.dir/src/ball.cxx.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.cxx -o CMakeFiles/model_test.dir/src/ball.cxx.s
 
 CMakeFiles/model_test.dir/test/model_test.cxx.o: CMakeFiles/model_test.dir/flags.make
 CMakeFiles/model_test.dir/test/model_test.cxx.o: ../test/model_test.cxx
@@ -114,14 +114,14 @@ CMakeFiles/model_test.dir/test/model_test.cxx.s: cmake_force
 # Object files for target model_test
 model_test_OBJECTS = \
 "CMakeFiles/model_test.dir/src/model.cxx.o" \
-"CMakeFiles/model_test.dir/src/character.cxx.o" \
+"CMakeFiles/model_test.dir/src/ball.cxx.o" \
 "CMakeFiles/model_test.dir/test/model_test.cxx.o"
 
 # External object files for target model_test
 model_test_EXTERNAL_OBJECTS =
 
 model_test: CMakeFiles/model_test.dir/src/model.cxx.o
-model_test: CMakeFiles/model_test.dir/src/character.cxx.o
+model_test: CMakeFiles/model_test.dir/src/ball.cxx.o
 model_test: CMakeFiles/model_test.dir/test/model_test.cxx.o
 model_test: CMakeFiles/model_test.dir/build.make
 model_test: .cs211/lib/catch/libcatch.a

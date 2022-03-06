@@ -580,8 +580,6 @@ CMakeFiles/motion-planning-example.dir/src/controller.cxx.o: ../src/controller.c
   /usr/local/include/SDL2/SDL_blendmode.h \
   /usr/local/include/SDL2/SDL_render.h \
   .cs211/lib/ge211/include/ge211_version.hxx \
-  ../src/character.hxx \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue \
   ../src/view.hxx
 
 CMakeFiles/motion-planning-example.dir/src/main.cxx.o: ../src/main.cxx \
@@ -873,8 +871,6 @@ CMakeFiles/motion-planning-example.dir/src/main.cxx.o: ../src/main.cxx \
   /usr/local/include/SDL2/SDL_blendmode.h \
   /usr/local/include/SDL2/SDL_render.h \
   .cs211/lib/ge211/include/ge211_version.hxx \
-  ../src/character.hxx \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue \
   ../src/view.hxx
 
 CMakeFiles/motion-planning-example.dir/src/model.cxx.o: ../src/model.cxx \
@@ -1164,9 +1160,7 @@ CMakeFiles/motion-planning-example.dir/src/model.cxx.o: ../src/model.cxx \
   /usr/local/include/SDL2/SDL_surface.h \
   /usr/local/include/SDL2/SDL_blendmode.h \
   /usr/local/include/SDL2/SDL_render.h \
-  .cs211/lib/ge211/include/ge211_version.hxx \
-  ../src/character.hxx \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue
+  .cs211/lib/ge211/include/ge211_version.hxx
 
 CMakeFiles/motion-planning-example.dir/src/view.cxx.o: ../src/view.cxx \
   ../src/view.hxx \
@@ -1456,9 +1450,7 @@ CMakeFiles/motion-planning-example.dir/src/view.cxx.o: ../src/view.cxx \
   /usr/local/include/SDL2/SDL_surface.h \
   /usr/local/include/SDL2/SDL_blendmode.h \
   /usr/local/include/SDL2/SDL_render.h \
-  .cs211/lib/ge211/include/ge211_version.hxx \
-  ../src/character.hxx \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue
+  .cs211/lib/ge211/include/ge211_version.hxx
 
 
 ../src/main.cxx:

@@ -80,7 +80,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/model_test.dir/DependInfo.cmake"
-  "CMakeFiles/motion-planning-example.dir/DependInfo.cmake"
+  "CMakeFiles/game.dir/DependInfo.cmake"
   ".cs211/lib/catch/CMakeFiles/catch.dir/DependInfo.cmake"
   ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/DependInfo.cmake"
   ".cs211/lib/ge211/example/CMakeFiles/fireworks.dir/DependInfo.cmake"

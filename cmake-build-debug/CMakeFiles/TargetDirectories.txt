@@ -1,12 +1,12 @@
 /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/install/strip.dir
 /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/install.dir
-/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/model_test.dir
-/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/list_install_components.dir
 /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/install/local.dir
 /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/test.dir
-/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/list_install_components.dir
-/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/motion-planning-example.dir
+/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/model_test.dir
+/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles/game.dir
 /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/catch/CMakeFiles/install/strip.dir
 /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/catch/CMakeFiles/install.dir
 /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/catch/CMakeFiles/rebuild_cache.dir

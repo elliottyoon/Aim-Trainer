@@ -582,8 +582,6 @@ CMakeFiles/motion-planning-example.dir/src/controller.cxx.o
  /usr/local/include/SDL2/SDL_blendmode.h
  /usr/local/include/SDL2/SDL_render.h
  /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/include/ge211_version.hxx
- /Users/elliottyoon/Desktop/CS211/AimTrainer/src/character.hxx
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue
  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/view.hxx
 
 CMakeFiles/motion-planning-example.dir/src/main.cxx.o
@@ -876,8 +874,6 @@ CMakeFiles/motion-planning-example.dir/src/main.cxx.o
  /usr/local/include/SDL2/SDL_blendmode.h
  /usr/local/include/SDL2/SDL_render.h
  /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/include/ge211_version.hxx
- /Users/elliottyoon/Desktop/CS211/AimTrainer/src/character.hxx
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue
  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/view.hxx
 
 CMakeFiles/motion-planning-example.dir/src/model.cxx.o
@@ -1169,8 +1165,6 @@ CMakeFiles/motion-planning-example.dir/src/model.cxx.o
  /usr/local/include/SDL2/SDL_blendmode.h
  /usr/local/include/SDL2/SDL_render.h
  /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/include/ge211_version.hxx
- /Users/elliottyoon/Desktop/CS211/AimTrainer/src/character.hxx
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue
 
 CMakeFiles/motion-planning-example.dir/src/view.cxx.o
  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/view.cxx
@@ -1462,6 +1456,4 @@ CMakeFiles/motion-planning-example.dir/src/view.cxx.o
  /usr/local/include/SDL2/SDL_blendmode.h
  /usr/local/include/SDL2/SDL_render.h
  /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/include/ge211_version.hxx
- /Users/elliottyoon/Desktop/CS211/AimTrainer/src/character.hxx
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/queue
 

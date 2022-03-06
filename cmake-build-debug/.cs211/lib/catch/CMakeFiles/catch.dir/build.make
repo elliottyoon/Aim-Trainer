@@ -83,17 +83,33 @@ include .cs211/lib/catch/CMakeFiles/catch.dir/flags.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/catch.dir/src/catch.cxx.s"
 	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/catch && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/catch/src/catch.cxx -o CMakeFiles/catch.dir/src/catch.cxx.s
 
+.cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o: .cs211/lib/catch/CMakeFiles/catch.dir/flags.make
+.cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o: ../src/ball.cxx
+.cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o: .cs211/lib/catch/CMakeFiles/catch.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o"
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/catch && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o -MF CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o.d -o CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.cxx
+
+.cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/catch.dir/__/__/__/src/ball.cxx.i"
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/catch && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.cxx > CMakeFiles/catch.dir/__/__/__/src/ball.cxx.i
+
+.cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/catch.dir/__/__/__/src/ball.cxx.s"
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/catch && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.cxx -o CMakeFiles/catch.dir/__/__/__/src/ball.cxx.s
+
 # Object files for target catch
 catch_OBJECTS = \
-"CMakeFiles/catch.dir/src/catch.cxx.o"
+"CMakeFiles/catch.dir/src/catch.cxx.o" \
+"CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o"
 
 # External object files for target catch
 catch_EXTERNAL_OBJECTS =
 
 .cs211/lib/catch/libcatch.a: .cs211/lib/catch/CMakeFiles/catch.dir/src/catch.cxx.o
+.cs211/lib/catch/libcatch.a: .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o
 .cs211/lib/catch/libcatch.a: .cs211/lib/catch/CMakeFiles/catch.dir/build.make
 .cs211/lib/catch/libcatch.a: .cs211/lib/catch/CMakeFiles/catch.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcatch.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcatch.a"
 	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/catch && $(CMAKE_COMMAND) -P CMakeFiles/catch.dir/cmake_clean_target.cmake
 	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/catch && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/catch.dir/link.txt --verbose=$(VERBOSE)
 

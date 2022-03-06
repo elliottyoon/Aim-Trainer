@@ -185,6 +185,30 @@ catch/fast:
 	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/build
 .PHONY : catch/fast
 
+__/__/__/src/ball.o: __/__/__/src/ball.cxx.o
+.PHONY : __/__/__/src/ball.o
+
+# target to build an object file
+__/__/__/src/ball.cxx.o:
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o
+.PHONY : __/__/__/src/ball.cxx.o
+
+__/__/__/src/ball.i: __/__/__/src/ball.cxx.i
+.PHONY : __/__/__/src/ball.i
+
+# target to preprocess a source file
+__/__/__/src/ball.cxx.i:
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.i
+.PHONY : __/__/__/src/ball.cxx.i
+
+__/__/__/src/ball.s: __/__/__/src/ball.cxx.s
+.PHONY : __/__/__/src/ball.s
+
+# target to generate assembly for a file
+__/__/__/src/ball.cxx.s:
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.s
+.PHONY : __/__/__/src/ball.cxx.s
+
 src/catch.o: src/catch.cxx.o
 .PHONY : src/catch.o
 
@@ -223,6 +247,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... catch"
+	@echo "... __/__/__/src/ball.o"
+	@echo "... __/__/__/src/ball.i"
+	@echo "... __/__/__/src/ball.s"
 	@echo "... src/catch.o"
 	@echo "... src/catch.i"
 	@echo "... src/catch.s"

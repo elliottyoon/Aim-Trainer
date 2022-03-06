@@ -11,4 +11,8 @@ public:
 
 private:
     Model const& model_;
+    size_t time_elapsed; /* time elapsed since game starts (might change this
+     to be part of the model) 1 = 1/60th of a second  */
+    ge211::Circle_sprite ball_sprite;
+
 };

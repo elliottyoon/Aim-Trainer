@@ -1,7 +1,8 @@
 #include "controller.hxx"
 
 Controller::Controller()
-        : view_(model_)
+        : model_(10, 10) // CHANGE THIS FROM MAGIC NUMBER LATER
+        , view_(model_)
 { }
 
 void

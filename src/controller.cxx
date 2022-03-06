@@ -12,11 +12,11 @@ Controller::draw(ge211::Sprite_set& set)
 {
     view_.draw(set);
 
-    /********* make this a separate method later**********/
-    rand_x_ = int(rand() % model_.get_model_dims().width); // TODO: see below
-    rand_y_ = int(rand() % model_.get_model_dims().height); // TODO: make this
-    // dynamically change
-    // with window size
+    /********* TODO: make this a separate method later*********
+     * TODO: if ball would overlap with already existing ball, generate new
+     *       random value */
+    rand_x_ = int(rand() % model_.get_model_dims().width);
+    rand_y_ = int(rand() % model_.get_model_dims().height);
 
     // keeps track of time passed
     time_elapsed_++;

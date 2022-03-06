@@ -16,5 +16,5 @@ Components:
     position to the current mouse movement
 
 ## To Do (later):
-* dynamic window size
+* Make sure crosshair is centered
 * getter/setters for everything

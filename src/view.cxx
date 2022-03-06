@@ -1,7 +1,6 @@
 #include "view.hxx"
 using Color = ge211::Color;
-int rand_x; // huhhhh
-int rand_y;
+
 
 View::View(Model const& model)
         : model_(model)

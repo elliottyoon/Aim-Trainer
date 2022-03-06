@@ -3,7 +3,7 @@
 using Position = ge211::Posn<int>;
 
 Model::Model(int width, int height)
-    //: ball(5,{10, 10})
+    : model_dims_{width, height}
 {
 
 }

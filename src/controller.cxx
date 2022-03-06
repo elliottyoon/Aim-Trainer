@@ -1,7 +1,7 @@
 #include "controller.hxx"
 
 Controller::Controller()
-        : model_(10, 10) // CHANGE THIS FROM MAGIC NUMBER LATER
+        : model_(500, 500) // CHANGE THIS FROM MAGIC NUMBER LATER
         , view_(model_)
         , time_elapsed_(0)
         , mouse_posn_{0,0} // TODO: change this!
@@ -13,8 +13,8 @@ Controller::draw(ge211::Sprite_set& set)
     view_.draw(set);
 
     /********* make this a separate method later**********/
-    rand_x_ = int(rand() % 100); // TODO: see below
-    rand_y_ = int(rand() % 100); // TODO: make this dynamically change
+    rand_x_ = int(rand() % 500); // TODO: see below
+    rand_y_ = int(rand() % 500); // TODO: make this dynamically change
     // with window size
 
     // keeps track of time passed
@@ -43,5 +43,5 @@ Controller::initial_window_title() const
 Dims
 Controller::initial_window_dimensions() const
 {
-    return {500,500}; // TODO: Change magic number
+    return model_.get_model_dims(); // TODO: Change magic number
 }

@@ -17,9 +17,17 @@ class ball
 public:
     explicit ball(int radius, Position pos);
 
-    size_t ball_radius;
-    Position ball_coords;
+    // Returns ball radius
+    int get_ball_radius() const
+    { return ball_radius_; }
 
+    // Returns ball position
+    Position get_ball_position() const
+    { return ball_coords_; }
+
+private:
+    int ball_radius_;
+    Position ball_coords_;
 
 };
 

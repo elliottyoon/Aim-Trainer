@@ -4,6 +4,7 @@ Controller::Controller()
         : model_(10, 10) // CHANGE THIS FROM MAGIC NUMBER LATER
         , view_(model_)
         , time_elapsed_(0)
+        , mouse_posn_{0,0} // TODO: change this!
 { }
 
 void
@@ -23,8 +24,18 @@ Controller::draw(ge211::Sprite_set& set)
         // TODO: adds ball to playing field
         model_.add_ball(ball(5, {rand_x_, rand_y_}));
 
-        // set.add_sprite(ball_sprite, {}); // TODO:
-        // replace xy
-        // with rand int x, rand int y
     }
+}
+
+void
+Controller::on_mouse_move(Position posn) {
+    // calculate displacement and displace balls by the inverse displacement
+
+    // set mouse_posn_ to whatever the new position is
+}
+
+std::string
+Controller::initial_window_title() const
+{
+    return "hi";
 }

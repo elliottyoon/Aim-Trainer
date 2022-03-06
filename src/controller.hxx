@@ -16,4 +16,8 @@ protected:
 private:
     Model model_;
     View view_;
+
+    int rand_x_;
+    int rand_y_;
+    int time_elapsed_;
 };

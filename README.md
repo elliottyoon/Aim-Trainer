@@ -17,3 +17,4 @@ Components:
 
 ## To Do (later):
 * dynamic window size
+* getter/setters for everything

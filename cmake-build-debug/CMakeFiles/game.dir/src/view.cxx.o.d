@@ -286,4 +286,5 @@ CMakeFiles/game.dir/src/view.cxx.o: \
   /usr/local/include/SDL2/SDL_surface.h \
   /usr/local/include/SDL2/SDL_blendmode.h \
   /usr/local/include/SDL2/SDL_render.h \
-  /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/src/../include/ge211_version.hxx
+  /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/src/../include/ge211_version.hxx \
+  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.hxx

@@ -20,7 +20,8 @@ View::draw(ge211::Sprite_set& set)
     time_elapsed++;
 
     if (time_elapsed % 60 == 0) {
-        set.add_sprite(ball_sprite, {rand_x, rand_y}); // TODO: replace xy
+        // set.add_sprite(ball_sprite, {}); // TODO:
+        // replace xy
         // with rand int x, rand int y
     }
 }

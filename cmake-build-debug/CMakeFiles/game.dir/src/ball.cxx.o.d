@@ -1,6 +1,6 @@
-CMakeFiles/game.dir/src/model.cxx.o: \
-  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/model.cxx \
-  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/model.hxx \
+CMakeFiles/game.dir/src/ball.cxx.o: \
+  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.cxx \
+  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.hxx \
   /Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/../include/ge211.hxx \
   /Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/../include/ge211_base.hxx \
   /Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/../include/ge211_audio.hxx \
@@ -285,5 +285,4 @@ CMakeFiles/game.dir/src/model.cxx.o: \
   /usr/local/include/SDL2/SDL_surface.h \
   /usr/local/include/SDL2/SDL_blendmode.h \
   /usr/local/include/SDL2/SDL_render.h \
-  /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/src/../include/ge211_version.hxx \
-  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.hxx
+  /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/src/../include/ge211_version.hxx

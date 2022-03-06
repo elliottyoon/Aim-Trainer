@@ -13,8 +13,9 @@ Controller::draw(ge211::Sprite_set& set)
     view_.draw(set);
 
     /********* make this a separate method later**********/
-    rand_x_ = int(rand() % 500); // TODO: see below
-    rand_y_ = int(rand() % 500); // TODO: make this dynamically change
+    rand_x_ = int(rand() % model_.get_model_dims().width); // TODO: see below
+    rand_y_ = int(rand() % model_.get_model_dims().height); // TODO: make this
+    // dynamically change
     // with window size
 
     // keeps track of time passed

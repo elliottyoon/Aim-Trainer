@@ -5,7 +5,7 @@ Controller::Controller()
         : model_(500, 500) // CHANGE THIS FROM MAGIC NUMBER LATER
         , view_(model_)
         , time_elapsed_(0)
-        , mouse_posn_(view_.get_crosshair_pos())
+        , mouse_posn_(view_.get_crosshair_center_posn())
         , displacement_{0,0}
         , id_count_(0)
 { }
@@ -42,7 +42,7 @@ void
 Controller::on_mouse_down(ge211::Mouse_button button, Position posn)
 {
     // TODO: delete ball from model
-    if (model_.delete_ball(view_.get_crosshair_pos(), displacement_)) {
+    if (model_.delete_ball(view_.get_crosshair_center_posn(), displacement_)) {
         std::cout << "true\n";
         // TODO: play sound
         // TODO: increment score

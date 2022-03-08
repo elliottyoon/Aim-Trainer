@@ -34,6 +34,11 @@ public:
     int get_ball_id() const
     { return id_num_; }
 
+    // Returns ball center_coords_
+    Position get_view_center(Position displacement) const
+    { return {get_view_position(displacement).x + ball_radius_,
+              get_view_position(displacement).y + ball_radius_}; }
+
 
 private:
     int ball_radius_;

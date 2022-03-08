@@ -18,5 +18,9 @@ Components:
 ## To Do (later):
 1. Monday: 
    * ~~make crosshair move with mouse (but stay centered)~~
-   * if crosshair clicks on ball, ball disappears
+   * ~~if crosshair clicks on ball, ball disappears~~
      * sound plays
+2. Tuesday:
+   * Fix crosshair on ball detection (from Monday)
+   * Create crosshair class
+   * Add menu box

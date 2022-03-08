@@ -7,8 +7,11 @@ Controller::Controller()
         , time_elapsed_(0)
         , mouse_posn_(view_.get_crosshair_center_posn())
         , displacement_{0,0}
-        , id_count_(0)
-{ }
+        , score_(0)
+        , hit_sound_("hitsound_1.ogg", mixer())
+        , miss_sound_("ABMiss.ogg", mixer())
+{
+}
 
 void
 Controller::draw(ge211::Sprite_set& set)
@@ -41,12 +44,13 @@ Controller::on_mouse_move(Position posn)
 void
 Controller::on_mouse_down(ge211::Mouse_button button, Position posn)
 {
-    // TODO: delete ball from model
     if (model_.delete_ball(view_.get_crosshair_center_posn(), displacement_)) {
-        std::cout << "true\n";
-        // TODO: play sound
+        // plays (hit) sound when ball is clicked
+        mixer().play_effect(hit_sound_);
         // TODO: increment score
     }
+    // plays (miss) sound when ball is not clicked
+    mixer().play_effect(miss_sound_);
 }
 
 std::string

@@ -30,8 +30,11 @@ private:
     int rand_x_;
     int rand_y_;
     int time_elapsed_;
-    int id_count_;
+    int score_;
 
     Position displacement_;
     Position mouse_posn_;
+
+    ge211::Sound_effect hit_sound_;
+    ge211::Sound_effect miss_sound_;
 };

@@ -30,9 +30,7 @@ public:
     { return {ball_coords_.x - displacement.x, ball_coords_.y - displacement
     .y}; }
 
-    // Returns ball ID number
-    int get_ball_id() const
-    { return id_num_; }
+
 
     // Returns ball center_coords_
     Position get_view_center(Position displacement) const
@@ -42,7 +40,6 @@ public:
 
 private:
     int ball_radius_;
-    int id_num_;
     Position ball_coords_;
 
 };

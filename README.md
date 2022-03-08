@@ -16,5 +16,7 @@ Components:
     position to the current mouse movement
 
 ## To Do (later):
-* Make sure crosshair is centered
-* getter/setters for everything
+1. Monday: 
+   * ~~make crosshair move with mouse (but stay centered)~~
+   * if crosshair clicks on ball, ball disappears
+     * sound plays

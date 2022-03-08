@@ -580,7 +580,8 @@ CMakeFiles/game.dir/src/controller.cxx.o: ../src/controller.cxx \
   /usr/local/include/SDL2/SDL_render.h \
   .cs211/lib/ge211/include/ge211_version.hxx \
   ../src/ball.hxx \
-  ../src/view.hxx
+  ../src/view.hxx \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream
 
 CMakeFiles/game.dir/src/main.cxx.o: ../src/main.cxx \
   ../src/controller.hxx \
@@ -1162,7 +1163,8 @@ CMakeFiles/game.dir/src/model.cxx.o: ../src/model.cxx \
   /usr/local/include/SDL2/SDL_blendmode.h \
   /usr/local/include/SDL2/SDL_render.h \
   .cs211/lib/ge211/include/ge211_version.hxx \
-  ../src/ball.hxx
+  ../src/ball.hxx \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream
 
 CMakeFiles/game.dir/src/view.cxx.o: ../src/view.cxx \
   ../src/view.hxx \
@@ -1839,6 +1841,8 @@ CMakeFiles/game.dir/src/view.cxx.o: ../src/view.cxx \
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/assert.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_pid_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_sigset_t.h:
 

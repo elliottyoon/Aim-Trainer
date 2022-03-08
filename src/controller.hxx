@@ -14,7 +14,10 @@ public:
 protected:
     void draw(ge211::Sprite_set& set) override;
     //  - on_mouse_move for mouse tracking
+    //  - on_mouse_down for the whole aim trainer thingy
     void on_mouse_move(Position) override;
+    void on_mouse_down(ge211::Mouse_button button, Position) override;
+
 
     // overridden window methods
     std::string initial_window_title() const override;
@@ -27,5 +30,8 @@ private:
     int rand_x_;
     int rand_y_;
     int time_elapsed_;
+    int id_count_;
+
+    Position displacement_;
     Position mouse_posn_;
 };

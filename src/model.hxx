@@ -2,6 +2,7 @@
 
 #include <ge211.hxx>
 #include "ball.hxx"
+#include "crosshair.hxx"
 #include <cmath> // for sqrt
 
 using dims = ge211::Dims<int>;

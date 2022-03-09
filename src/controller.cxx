@@ -8,7 +8,7 @@ Controller::Controller()
         , mouse_posn_(view_.get_crosshair_center_posn())
         , displacement_{0,0}
         , score_(0)
-        , hit_sound_("hitsound_1.ogg", mixer())
+        , hit_sound_("hitsound_soft.ogg", mixer())
         , miss_sound_("ABMiss.ogg", mixer())
 {
 }
@@ -20,14 +20,12 @@ Controller::draw(ge211::Sprite_set& set)
 
     /********* TODO: make this a separate method later*********
      *  */
-    rand_x_ = int(rand() % model_.get_model_dims().width);
-    rand_y_ = int(rand() % model_.get_model_dims().height);
+    Position rand_coord = get_rand_coord();
     // keeps track of time passed
     time_elapsed_++;
 
     if (time_elapsed_ % 60 == 0) {
-        model_.add_ball(ball(5, {rand_x_, rand_y_}, id_count_));
-        id_count_++; // new id number for new ball
+        model_.add_ball(ball(5, {rand_coord.x, rand_coord.y}));
     }
 }
 
@@ -62,5 +60,5 @@ Controller::initial_window_title() const
 Dims
 Controller::initial_window_dimensions() const
 {
-    return model_.get_model_dims(); // TODO: Change magic number
+    return model_.get_model_dims();
 }

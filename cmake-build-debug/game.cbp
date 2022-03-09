@@ -396,6 +396,14 @@
 		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/controller.hxx">
 			<Option target="game"/>
 		</Unit>
+		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/crosshair.cxx">
+			<Option target="model_test"/>
+			<Option target="game"/>
+			<Option target="catch"/>
+		</Unit>
+		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/crosshair.hxx">
+			<Option target="catch"/>
+		</Unit>
 		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/main.cxx">
 			<Option target="game"/>
 		</Unit>

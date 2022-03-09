@@ -74,6 +74,12 @@
 		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.hxx">
 			<Option target="catch"/>
 		</Unit>
+		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/crosshair.cxx">
+			<Option target="catch"/>
+		</Unit>
+		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/crosshair.hxx">
+			<Option target="catch"/>
+		</Unit>
 		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

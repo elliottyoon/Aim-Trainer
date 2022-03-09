@@ -287,6 +287,33 @@ src/controller.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/controller.cxx.s
 .PHONY : src/controller.cxx.s
 
+src/crosshair.o: src/crosshair.cxx.o
+.PHONY : src/crosshair.o
+
+# target to build an object file
+src/crosshair.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/crosshair.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/crosshair.cxx.o
+.PHONY : src/crosshair.cxx.o
+
+src/crosshair.i: src/crosshair.cxx.i
+.PHONY : src/crosshair.i
+
+# target to preprocess a source file
+src/crosshair.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/crosshair.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/crosshair.cxx.i
+.PHONY : src/crosshair.cxx.i
+
+src/crosshair.s: src/crosshair.cxx.s
+.PHONY : src/crosshair.s
+
+# target to generate assembly for a file
+src/crosshair.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/crosshair.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/crosshair.cxx.s
+.PHONY : src/crosshair.cxx.s
+
 src/main.o: src/main.cxx.o
 .PHONY : src/main.o
 
@@ -410,6 +437,9 @@ help:
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
+	@echo "... src/crosshair.o"
+	@echo "... src/crosshair.i"
+	@echo "... src/crosshair.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

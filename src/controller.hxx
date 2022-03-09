@@ -37,4 +37,10 @@ private:
 
     ge211::Sound_effect hit_sound_;
     ge211::Sound_effect miss_sound_;
+
+    // gets random x and y coordinate.
+    // TODO: keep balls from spawning under menu screen
+    Position get_rand_coord()
+    { return {int(rand() % model_.get_model_dims().width),
+              int(rand() % model_.get_model_dims().height)}; }
 };

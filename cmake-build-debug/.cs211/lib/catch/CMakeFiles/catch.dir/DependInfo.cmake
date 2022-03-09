@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.cxx" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o" "gcc" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/crosshair.cxx" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/crosshair.cxx.o" "gcc" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/crosshair.cxx.o.d"
   "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/catch/src/catch.cxx" ".cs211/lib/catch/CMakeFiles/catch.dir/src/catch.cxx.o" "gcc" ".cs211/lib/catch/CMakeFiles/catch.dir/src/catch.cxx.o.d"
   )
 

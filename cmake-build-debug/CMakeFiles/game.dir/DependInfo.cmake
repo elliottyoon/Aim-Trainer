@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.cxx" "CMakeFiles/game.dir/src/ball.cxx.o" "gcc" "CMakeFiles/game.dir/src/ball.cxx.o.d"
   "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/controller.cxx" "CMakeFiles/game.dir/src/controller.cxx.o" "gcc" "CMakeFiles/game.dir/src/controller.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/crosshair.cxx" "CMakeFiles/game.dir/src/crosshair.cxx.o" "gcc" "CMakeFiles/game.dir/src/crosshair.cxx.o.d"
   "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/main.cxx" "CMakeFiles/game.dir/src/main.cxx.o" "gcc" "CMakeFiles/game.dir/src/main.cxx.o.d"
   "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/model.cxx" "CMakeFiles/game.dir/src/model.cxx.o" "gcc" "CMakeFiles/game.dir/src/model.cxx.o.d"
   "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/view.cxx" "CMakeFiles/game.dir/src/view.cxx.o" "gcc" "CMakeFiles/game.dir/src/view.cxx.o.d"

@@ -22,7 +22,7 @@ Components:
      * ~~sound plays~~
 3. Tuesday:
    * ~~Fix crosshair on ball detection (from Monday)~~
-   * Create crosshair class
+   * ~~Create crosshair class~~
    * Add menu box
      * Number of balls on screen at a time
 * **Miscellaneous**

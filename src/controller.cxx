@@ -17,7 +17,7 @@ Controller::Controller()
 void
 Controller::draw(ge211::Sprite_set& set)
 {
-    view_.draw(set, displacement_, score_);
+    view_.draw(set, displacement_, score_, time_elapsed_);
 
     // gets random coordinate for ball to be placed
     Position rand_coord = get_rand_coord();

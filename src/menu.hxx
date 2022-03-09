@@ -8,8 +8,16 @@
 
 #include <ge211.hxx>
 
+using Position = ge211::Posn<int>;
+using Dims = ge211::Dims<int>;
+
 class Menu
 {
+public:
+    explicit Menu();
+private:
+    // top-left coordinate of menu box
+    Position coords_;
 
 };
 

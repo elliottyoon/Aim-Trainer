@@ -20,20 +20,28 @@ View::View(Model& model)
         , debug_ball_sprite_{5, Color::medium_red()}
         , crosshair_sprite_("crosshair.png")
         , score_position_{10, 10}
+        , time_position_{10, 40}
 {
     ge211::Font sans30{"sans.ttf", 30};
 }
 
 void
-View::draw(ge211::Sprite_set& set, Posn displacement, int score)
+View::draw(ge211::Sprite_set& set, Posn displacement, int score, int
+time_elapsed)
 {
     // draws crossshair. z-value: 10
     set.add_sprite(crosshair_sprite_, crosshair_.get_top_left_coords(),10);
-    // draws score. z-value: 20
+    // draws score. z-value: 10
     ge211::Text_sprite::Builder current_score(sans18);
-    current_score << score;
+    current_score << "Score: " << score;
     score_sprite_.reconfigure(current_score);
-    set.add_sprite(score_sprite_, score_position_);
+    set.add_sprite(score_sprite_, score_position_, 10);
+    // draws time elapsed. z-value: 10
+    ge211::Text_sprite::Builder current_time(sans18);
+    current_time << "Time: " << time_elapsed / 60;
+    time_sprite_.reconfigure(current_time);
+    set.add_sprite(time_sprite_, time_position_, 10);
+
 
     // draws each ball in the balls vector. z-value: 1
     for (ball ball_individual: model_.get_balls()) {

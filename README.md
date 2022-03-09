@@ -24,6 +24,7 @@ Components:
    * ~~Fix crosshair on ball detection (from Monday)~~
    * ~~Create crosshair class~~
    * ~~Display score~~
+   * Display time elapsed
    * Add menu box
      * Number of balls on screen at a time
 * **Miscellaneous**

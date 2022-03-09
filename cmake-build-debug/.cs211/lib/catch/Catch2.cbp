@@ -80,6 +80,12 @@
 		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/crosshair.hxx">
 			<Option target="catch"/>
 		</Unit>
+		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.cxx">
+			<Option target="catch"/>
+		</Unit>
+		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.hxx">
+			<Option target="catch"/>
+		</Unit>
 		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

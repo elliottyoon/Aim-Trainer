@@ -338,6 +338,33 @@ src/main.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/main.cxx.s
 .PHONY : src/main.cxx.s
 
+src/menu.o: src/menu.cxx.o
+.PHONY : src/menu.o
+
+# target to build an object file
+src/menu.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/menu.cxx.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/menu.cxx.o
+.PHONY : src/menu.cxx.o
+
+src/menu.i: src/menu.cxx.i
+.PHONY : src/menu.i
+
+# target to preprocess a source file
+src/menu.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/menu.cxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/menu.cxx.i
+.PHONY : src/menu.cxx.i
+
+src/menu.s: src/menu.cxx.s
+.PHONY : src/menu.s
+
+# target to generate assembly for a file
+src/menu.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/model_test.dir/build.make CMakeFiles/model_test.dir/src/menu.cxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/menu.cxx.s
+.PHONY : src/menu.cxx.s
+
 src/model.o: src/model.cxx.o
 .PHONY : src/model.o
 
@@ -443,6 +470,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/menu.o"
+	@echo "... src/menu.i"
+	@echo "... src/menu.s"
 	@echo "... src/model.o"
 	@echo "... src/model.i"
 	@echo "... src/model.s"

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/game.dir/src/crosshair.cxx.o.d"
   "CMakeFiles/game.dir/src/main.cxx.o"
   "CMakeFiles/game.dir/src/main.cxx.o.d"
+  "CMakeFiles/game.dir/src/menu.cxx.o"
+  "CMakeFiles/game.dir/src/menu.cxx.o.d"
   "CMakeFiles/game.dir/src/model.cxx.o"
   "CMakeFiles/game.dir/src/model.cxx.o.d"
   "CMakeFiles/game.dir/src/view.cxx.o"

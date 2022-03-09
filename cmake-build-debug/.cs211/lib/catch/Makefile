@@ -233,6 +233,30 @@ __/__/__/src/crosshair.cxx.s:
 	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/crosshair.cxx.s
 .PHONY : __/__/__/src/crosshair.cxx.s
 
+__/__/__/src/menu.o: __/__/__/src/menu.cxx.o
+.PHONY : __/__/__/src/menu.o
+
+# target to build an object file
+__/__/__/src/menu.cxx.o:
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/menu.cxx.o
+.PHONY : __/__/__/src/menu.cxx.o
+
+__/__/__/src/menu.i: __/__/__/src/menu.cxx.i
+.PHONY : __/__/__/src/menu.i
+
+# target to preprocess a source file
+__/__/__/src/menu.cxx.i:
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/menu.cxx.i
+.PHONY : __/__/__/src/menu.cxx.i
+
+__/__/__/src/menu.s: __/__/__/src/menu.cxx.s
+.PHONY : __/__/__/src/menu.s
+
+# target to generate assembly for a file
+__/__/__/src/menu.cxx.s:
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/menu.cxx.s
+.PHONY : __/__/__/src/menu.cxx.s
+
 src/catch.o: src/catch.cxx.o
 .PHONY : src/catch.o
 
@@ -277,6 +301,9 @@ help:
 	@echo "... __/__/__/src/crosshair.o"
 	@echo "... __/__/__/src/crosshair.i"
 	@echo "... __/__/__/src/crosshair.s"
+	@echo "... __/__/__/src/menu.o"
+	@echo "... __/__/__/src/menu.i"
+	@echo "... __/__/__/src/menu.s"
 	@echo "... src/catch.o"
 	@echo "... src/catch.i"
 	@echo "... src/catch.s"

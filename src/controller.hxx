@@ -2,8 +2,8 @@
 
 #include "model.hxx"
 #include "view.hxx"
-
 #include <ge211.hxx>
+
 using Dims = ge211::Dims<int>;
 
 class Controller : public ge211::Abstract_game

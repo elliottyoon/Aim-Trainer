@@ -407,6 +407,14 @@
 		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/main.cxx">
 			<Option target="game"/>
 		</Unit>
+		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.cxx">
+			<Option target="model_test"/>
+			<Option target="game"/>
+			<Option target="catch"/>
+		</Unit>
+		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.hxx">
+			<Option target="catch"/>
+		</Unit>
 		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/model.cxx">
 			<Option target="model_test"/>
 			<Option target="game"/>

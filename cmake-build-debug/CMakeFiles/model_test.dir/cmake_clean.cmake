@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/model_test.dir/src/ball.cxx.o.d"
   "CMakeFiles/model_test.dir/src/crosshair.cxx.o"
   "CMakeFiles/model_test.dir/src/crosshair.cxx.o.d"
+  "CMakeFiles/model_test.dir/src/menu.cxx.o"
+  "CMakeFiles/model_test.dir/src/menu.cxx.o.d"
   "CMakeFiles/model_test.dir/src/model.cxx.o"
   "CMakeFiles/model_test.dir/src/model.cxx.o.d"
   "CMakeFiles/model_test.dir/test/model_test.cxx.o"

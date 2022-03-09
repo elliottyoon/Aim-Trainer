@@ -257,6 +257,30 @@ __/__/__/src/menu.cxx.s:
 	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/menu.cxx.s
 .PHONY : __/__/__/src/menu.cxx.s
 
+__/__/__/src/option.o: __/__/__/src/option.cxx.o
+.PHONY : __/__/__/src/option.o
+
+# target to build an object file
+__/__/__/src/option.cxx.o:
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/option.cxx.o
+.PHONY : __/__/__/src/option.cxx.o
+
+__/__/__/src/option.i: __/__/__/src/option.cxx.i
+.PHONY : __/__/__/src/option.i
+
+# target to preprocess a source file
+__/__/__/src/option.cxx.i:
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/option.cxx.i
+.PHONY : __/__/__/src/option.cxx.i
+
+__/__/__/src/option.s: __/__/__/src/option.cxx.s
+.PHONY : __/__/__/src/option.s
+
+# target to generate assembly for a file
+__/__/__/src/option.cxx.s:
+	cd /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug && $(MAKE) $(MAKESILENT) -f .cs211/lib/catch/CMakeFiles/catch.dir/build.make .cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/option.cxx.s
+.PHONY : __/__/__/src/option.cxx.s
+
 src/catch.o: src/catch.cxx.o
 .PHONY : src/catch.o
 
@@ -304,6 +328,9 @@ help:
 	@echo "... __/__/__/src/menu.o"
 	@echo "... __/__/__/src/menu.i"
 	@echo "... __/__/__/src/menu.s"
+	@echo "... __/__/__/src/option.o"
+	@echo "... __/__/__/src/option.i"
+	@echo "... __/__/__/src/option.s"
 	@echo "... src/catch.o"
 	@echo "... src/catch.i"
 	@echo "... src/catch.s"

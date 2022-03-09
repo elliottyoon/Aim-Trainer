@@ -86,6 +86,12 @@
 		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.hxx">
 			<Option target="catch"/>
 		</Unit>
+		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/option.cxx">
+			<Option target="catch"/>
+		</Unit>
+		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/src/option.hxx">
+			<Option target="catch"/>
+		</Unit>
 		<Unit filename="/Users/elliottyoon/Desktop/CS211/AimTrainer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

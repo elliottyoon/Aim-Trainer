@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/main.cxx" "CMakeFiles/game.dir/src/main.cxx.o" "gcc" "CMakeFiles/game.dir/src/main.cxx.o.d"
   "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.cxx" "CMakeFiles/game.dir/src/menu.cxx.o" "gcc" "CMakeFiles/game.dir/src/menu.cxx.o.d"
   "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/model.cxx" "CMakeFiles/game.dir/src/model.cxx.o" "gcc" "CMakeFiles/game.dir/src/model.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/option.cxx" "CMakeFiles/game.dir/src/option.cxx.o" "gcc" "CMakeFiles/game.dir/src/option.cxx.o.d"
   "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/view.cxx" "CMakeFiles/game.dir/src/view.cxx.o" "gcc" "CMakeFiles/game.dir/src/view.cxx.o.d"
   )
 

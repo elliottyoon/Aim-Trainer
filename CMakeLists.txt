@@ -12,7 +12,8 @@ set(MODEL_SRC
         src/ball.cxx
         src/crosshair.cxx
         src/menu.cxx
-        src/option.cxx)
+        src/option.cxx
+        )
 
 # TODO: PUT ADDITIONAL NON-MODEL (UI) .cxx FILES IN THIS LIST:
 add_program(${GAME_EXE}

@@ -7,6 +7,7 @@
 #pragma once
 
 #include <ge211.hxx>
+#include "option.hxx"
 
 using Position = ge211::Posn<int>;
 using Dims = ge211::Dims<int>;
@@ -14,10 +15,11 @@ using Dims = ge211::Dims<int>;
 class Menu
 {
 public:
-    explicit Menu();
+    explicit Menu(Position coords);
 private:
     // top-left coordinate of menu box
     Position coords_;
+    std::vector<Option> options_;
 
 };
 

@@ -289,4 +289,6 @@ CMakeFiles/game.dir/src/view.cxx.o: \
   /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/src/../include/ge211_version.hxx \
   /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.hxx \
   /Users/elliottyoon/Desktop/CS211/AimTrainer/src/crosshair.hxx \
+  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.hxx \
+  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/option.hxx \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream

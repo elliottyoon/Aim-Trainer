@@ -20,13 +20,17 @@ Components:
    * ~~make crosshair move with mouse (but stay centered)~~
    * ~~if crosshair clicks on ball, ball disappears~~
      * ~~sound plays~~
-3. Tuesday:
+2. Tuesday:
    * ~~Fix crosshair on ball detection (from Monday)~~
    * ~~Create crosshair class~~
    * ~~Display score~~
    * ~~Display time elapsed~~
-   * Add menu box
-     * Number of balls on screen at a time
+3. Wednesday:
+   * ~~Add menu box~~
+        * Number of balls on screen at a time
+        * Mode 1
+        * Mode 2
+        * Clicking on menu square will actually do something
 * **Miscellaneous**
   * Find better audio for hit/miss sound
 

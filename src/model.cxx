@@ -6,7 +6,7 @@ using Position = ge211::Posn<int>;
 Model::Model(int width, int height)
     : model_dims_{width, height}
 {
-
+    menu_ = Menu();
 }
 
 bool
@@ -33,3 +33,20 @@ Model::delete_ball(Position posn, Position displacement)
     return false;
 
 }
+
+/*
+ *     // iterates through menu options
+    for (std::vector<Option>::iterator it2 = menu_.get_options().begin(); it2 !=
+    menu_.get_options().end();) {
+        if (distance(posn, (*it2).get_center((*it2).get_box_pos_(),
+                                             displacement)) < (*it2)
+                                             .get_dimensions().width &&
+                distance(posn, (*it2).get_center((*it2).get_box_pos_(),
+                                                 displacement)) < (*it2)
+                        .get_dimensions().height) {
+            (*it2).set_selected(!(*it2).is_selected());
+        }
+
+        ++it2;
+    }
+ */

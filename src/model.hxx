@@ -3,7 +3,9 @@
 #include <ge211.hxx>
 #include "ball.hxx"
 #include "crosshair.hxx"
+#include "menu.hxx"
 #include <cmath> // for sqrt
+
 
 using dims = ge211::Dims<int>;
 
@@ -21,6 +23,10 @@ public:
     // Returns the list of balls in play
     std::vector<ball> get_balls() const
     { return balls_; }
+
+    // Returns the list of options
+    std::vector<Option> get_options() const
+    { return menu_.get_options(); }
 
     // Adds ball to the list of balls
     void add_ball(ball new_ball)
@@ -46,6 +52,8 @@ public:
 private:
     std::vector<ball> balls_; // list of all the balls in play
     dims model_dims_;
+    Menu menu_;
+
 
 
 

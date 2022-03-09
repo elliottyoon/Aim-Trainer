@@ -15,10 +15,12 @@ using Dims = ge211::Dims<int>;
 class Menu
 {
 public:
-    explicit Menu(Position coords);
+    explicit Menu();
+
+    std::vector<Option> get_options() const
+    { return options_; }
 private:
     // top-left coordinate of menu box
-    Position coords_;
     std::vector<Option> options_;
 
 };

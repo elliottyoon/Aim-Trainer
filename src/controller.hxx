@@ -27,10 +27,10 @@ private:
     Model model_;
     View view_;
 
-    int rand_x_;
-    int rand_y_;
+    int ball_freq_; // how many 1/60th seconds in between balls being placed
     int time_elapsed_;
     int score_;
+
 
     Position displacement_;
     Position mouse_posn_;

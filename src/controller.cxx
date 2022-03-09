@@ -7,6 +7,7 @@ Controller::Controller()
         , time_elapsed_(0)
         , mouse_posn_(view_.get_crosshair_center_posn())
         , displacement_{0,0}
+        , ball_freq_(60)
         , score_(0)
         , hit_sound_("hitsound_soft.ogg", mixer())
         , miss_sound_("ABMiss.ogg", mixer())
@@ -16,15 +17,14 @@ Controller::Controller()
 void
 Controller::draw(ge211::Sprite_set& set)
 {
-    view_.draw(set, displacement_);
+    view_.draw(set, displacement_, score_);
 
-    /********* TODO: make this a separate method later*********
-     *  */
+    // gets random coordinate for ball to be placed
     Position rand_coord = get_rand_coord();
     // keeps track of time passed
     time_elapsed_++;
 
-    if (time_elapsed_ % 60 == 0) {
+    if (time_elapsed_ % ball_freq_ == 0) {
         model_.add_ball(ball(5, {rand_coord.x, rand_coord.y}));
     }
 }
@@ -45,7 +45,8 @@ Controller::on_mouse_down(ge211::Mouse_button button, Position posn)
     if (model_.delete_ball(view_.get_crosshair_center_posn(), displacement_)) {
         // plays (hit) sound when ball is clicked
         mixer().play_effect(hit_sound_);
-        // TODO: increment score
+        // increments score
+        score_++;
     }
     // plays (miss) sound when ball is not clicked
     mixer().play_effect(miss_sound_);

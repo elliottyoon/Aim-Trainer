@@ -19,19 +19,21 @@ View::View(Model& model)
         , ball_sprite_{5, Color::white()} // TODO: radius should be variable
         , debug_ball_sprite_{5, Color::medium_red()}
         , crosshair_sprite_("crosshair.png")
-        , sans30{"sans.ttf", 30}
-
-
+        , score_position_{10, 10}
 {
     ge211::Font sans30{"sans.ttf", 30};
 }
 
 void
-View::draw(ge211::Sprite_set& set, Posn displacement)
+View::draw(ge211::Sprite_set& set, Posn displacement, int score)
 {
-
     // draws crossshair. z-value: 10
     set.add_sprite(crosshair_sprite_, crosshair_.get_top_left_coords(),10);
+    // draws score. z-value: 20
+    ge211::Text_sprite::Builder current_score(sans18);
+    current_score << score;
+    score_sprite_.reconfigure(current_score);
+    set.add_sprite(score_sprite_, score_position_);
 
     // draws each ball in the balls vector. z-value: 1
     for (ball ball_individual: model_.get_balls()) {
@@ -45,13 +47,9 @@ View::draw(ge211::Sprite_set& set, Posn displacement)
         else {
             set.add_sprite(ball_sprite_,
                        ball_individual.get_view_position(displacement),1);
-
-            // TODO: adds position text next to ball
-
-
-
-
             }
     }
-
 }
+
+
+

@@ -24,7 +24,7 @@ Components:
    * ~~Fix crosshair on ball detection (from Monday)~~
    * ~~Create crosshair class~~
    * ~~Display score~~
-   * Display time elapsed
+   * ~~Display time elapsed~~
    * Add menu box
      * Number of balls on screen at a time
 * **Miscellaneous**
@@ -36,7 +36,7 @@ Components:
 3. ~~Balls will disappear when clicked on by cursor~~
 4. ~~Balls will make a sound when clicked on by cursor~~
 5. ~~Number of balls clicked will be displayed on screen~~
-6. Time elapsed since session start will be displayed on screen
+6. ~~Time elapsed since session start will be displayed on screen~~
 7. ~~Cursor will be fixed in center of screen; movement will shift perspective~~
 8. User will be able to select among different modes:
 9. Mode 1: ball will pop up on the screen and disappear after a short amount of time if not clicked by user

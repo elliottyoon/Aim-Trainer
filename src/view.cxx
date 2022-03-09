@@ -51,11 +51,10 @@ time_elapsed)
             set.add_sprite(debug_ball_sprite_,
                            ball_individual.get_view_position(displacement),
                            2);
-        }
-        else {
+        } else {
             set.add_sprite(ball_sprite_,
                        ball_individual.get_view_position(displacement),1);
-            }
+        }
     }
 }
 

@@ -12,7 +12,14 @@ using Position = ge211::Posn<int>;
 class Model
 {
 public:
-    explicit Model(int width, int height);
+    explicit Model(int width, int height, int gamemode);
+    // Change game mode
+    void change_game_mode(int gm)
+    {game_mode = gm;}
+
+    // Return game mode
+    int get_game_mode() const
+    {return game_mode;}
 
     // Returns the dimensions of the screen
     dims get_model_dims() const
@@ -30,6 +37,8 @@ public:
     // if so, deletes the ball, returns true. returns false otherwise
     bool delete_ball(Position posn, Position displacement);
 
+    void delete_expired();
+
     // returns Euclidean distance between two positions
     float distance(Position pos1, Position pos2)
     {
@@ -46,6 +55,7 @@ public:
 private:
     std::vector<ball> balls_; // list of all the balls in play
     dims model_dims_;
+    int game_mode;
 
 
 

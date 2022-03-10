@@ -45,15 +45,15 @@ unset(_expectedTargets)
 add_library(ge211 STATIC IMPORTED)
 
 set_target_properties(ge211 PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/../include;/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/src/../include;/usr/local/include/SDL2"
-  INTERFACE_LINK_LIBRARIES "/usr/local/lib/libSDL2.dylib;-framework Cocoa;/usr/local/lib/libSDL2_image.dylib;/usr/local/lib/libSDL2_mixer.dylib;/usr/local/lib/libSDL2_ttf.dylib;\$<LINK_ONLY:utf8-cpp>"
+  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/../include;C:/Users/Graham/Documents/GitHub/Aim-Trainer/cmake-build-debug/.cs211/lib/ge211/src/../include;C:/MinGW/include/SDL2"
+  INTERFACE_LINK_LIBRARIES "mingw32;-mwindows;C:/MinGW/lib/libSDL2.dll.a;C:/MinGW/lib/libSDL2_image.dll.a;C:/MinGW/lib/libSDL2_mixer.dll.a;C:/MinGW/lib/libSDL2_ttf.dll.a;\$<LINK_ONLY:utf8-cpp>"
 )
 
 # Import target "ge211" for configuration "Debug"
 set_property(TARGET ge211 APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(ge211 PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/src/libge211.a"
+  IMPORTED_LOCATION_DEBUG "C:/Users/Graham/Documents/GitHub/Aim-Trainer/cmake-build-debug/.cs211/lib/ge211/src/libge211.a"
   )
 
 # Make sure the targets which have been exported in some other

@@ -6,9 +6,10 @@
 
 using Position = ge211::Posn<int>;
 
-ball::ball(int radius, Position pos)
+ball::ball(int radius, Position pos, int lifespan)
     : ball_radius_(radius)
     , ball_coords_(pos)
+    , ball_lifespan(lifespan)
     {
 
 }

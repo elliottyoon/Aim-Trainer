@@ -17,6 +17,7 @@ protected:
     //  - on_mouse_down for the whole aim trainer thingy
     void on_mouse_move(Position) override;
     void on_mouse_down(ge211::Mouse_button button, Position) override;
+    void on_key(ge211::Key) override;
 
 
     // overridden window methods

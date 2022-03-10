@@ -54,9 +54,9 @@ endif()
 add_library(ge211 STATIC IMPORTED)
 
 set_target_properties(ge211 PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;/usr/local/include/SDL2"
-  INTERFACE_LINK_LIBRARIES "/usr/local/lib/libSDL2.dylib;-framework Cocoa;/usr/local/lib/libSDL2_image.dylib;/usr/local/lib/libSDL2_mixer.dylib;/usr/local/lib/libSDL2_ttf.dylib;\$<LINK_ONLY:utf8-cpp>"
-  INTERFACE_SYSTEM_INCLUDE_DIRECTORIES "include;/usr/local/include/SDL2"
+  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;C:/MinGW/include/SDL2"
+  INTERFACE_LINK_LIBRARIES "mingw32;-mwindows;C:/MinGW/lib/libSDL2.dll.a;C:/MinGW/lib/libSDL2_image.dll.a;C:/MinGW/lib/libSDL2_mixer.dll.a;C:/MinGW/lib/libSDL2_ttf.dll.a;\$<LINK_ONLY:utf8-cpp>"
+  INTERFACE_SYSTEM_INCLUDE_DIRECTORIES "include;C:/MinGW/include/SDL2"
 )
 
 # Create imported target utf8-cpp

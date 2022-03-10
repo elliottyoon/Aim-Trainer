@@ -2,7 +2,7 @@
 #include <iostream>
 
 Controller::Controller()
-        : model_(500, 500) // CHANGE THIS FROM MAGIC NUMBER LATER
+        : model_(500, 500, 0) // CHANGE THIS FROM MAGIC NUMBER LATER
         , view_(model_)
         , time_elapsed_(0)
         , mouse_posn_(view_.get_crosshair_center_posn())
@@ -23,9 +23,17 @@ Controller::draw(ge211::Sprite_set& set)
     Position rand_coord = get_rand_coord();
     // keeps track of time passed
     time_elapsed_++;
+    int global_lifespan = -1;
+    //when mode1 is engaged, set global_lifespan = to 300, so that each ball
+    // made will have an intial lifespan of 5 seconds or so, then we will
+    // call increment on each ball whenever that will happen
+    if(model_.get_game_mode() == 1){
+        global_lifespan = 60;
+        model_.delete_expired();
+    }
 
     if (time_elapsed_ % ball_freq_ == 0) {
-        model_.add_ball(ball(5, {rand_coord.x, rand_coord.y}));
+        model_.add_ball(ball(5, {rand_coord.x, rand_coord.y}, global_lifespan));
     }
 }
 
@@ -47,9 +55,23 @@ Controller::on_mouse_down(ge211::Mouse_button button, Position posn)
         mixer().play_effect(hit_sound_);
         // increments score
         score_++;
+    } else {
+        // plays (miss) sound when ball is not clicked
+        mixer().play_effect(miss_sound_);
     }
-    // plays (miss) sound when ball is not clicked
-    mixer().play_effect(miss_sound_);
+}
+
+void
+Controller::on_key(ge211::Key key)
+{
+    if (key == ge211::Key::code('q')) {
+        quit();
+    }
+
+    if (key == ge211::Key::code('1')) {
+        model_.change_game_mode(1);
+    }
+
 }
 
 std::string

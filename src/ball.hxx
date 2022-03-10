@@ -13,7 +13,7 @@ using Position = ge211::Posn<int>;
 class ball
 {
 public:
-    explicit ball(int radius, Position pos);
+    explicit ball(int radius, Position pos, int lifespan);
 
     // Returns ball radius
     int get_ball_radius() const
@@ -28,7 +28,13 @@ public:
     { return {ball_coords_.x - displacement.x, ball_coords_.y - displacement
     .y}; }
 
+    // Returns the lifespan of the ball
+    int get_ball_lifespan() const
+    { return ball_lifespan; }
 
+    //increment lifespan of ball
+    void increment_lifespan()
+    {ball_lifespan = ball_lifespan - 1;}
 
     // Returns the coordinates of the (viewed) center of the ball
     Position get_view_center(Position displacement) const
@@ -41,6 +47,8 @@ private:
     int ball_radius_;
     // coordinates of the ball (on the model)
     Position ball_coords_;
+    //how long the ball lives when certain mode is active
+    int ball_lifespan;
 
 };
 

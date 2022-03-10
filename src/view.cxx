@@ -71,12 +71,11 @@ time_elapsed)
             .get_box_pos_(), displacement), 20);
         }
 
-        // TODO: checkboxes
         if (model_.distance(crosshair_.get_center_coords(), option.get_center
         (option.get_box_pos_(), displacement)) < 8) {
             set.add_sprite(option_sprite_active_,
                            option.get_pos(option.get_box_pos_(), displacement),
-                           20);
+                           25);
         }
     }
 

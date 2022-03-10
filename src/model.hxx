@@ -36,6 +36,9 @@ public:
     // if so, deletes the ball, returns true. returns false otherwise
     bool delete_ball(Position posn, Position displacement);
 
+    // select/deselect option
+    bool select_option(Position posn, Position displacement);
+
     // returns Euclidean distance between two positions
     float distance(Position pos1, Position pos2)
     {

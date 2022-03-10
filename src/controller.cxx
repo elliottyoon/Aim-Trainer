@@ -42,14 +42,22 @@ Controller::on_mouse_move(Position posn)
 void
 Controller::on_mouse_down(ge211::Mouse_button button, Position posn)
 {
-    if (model_.delete_ball(view_.get_crosshair_center_posn(), displacement_)) {
+    if (model_.select_option(view_.get_crosshair_center_posn(),
+                             displacement_)) {
+        time_elapsed_ = 0;
+        score_ = 0;
+    }
+    else if (model_.delete_ball(view_.get_crosshair_center_posn(),
+                             displacement_)) {
         // plays (hit) sound when ball is clicked
         mixer().play_effect(hit_sound_);
         // increments score
         score_++;
     }
-    // plays (miss) sound when ball is not clicked
-    mixer().play_effect(miss_sound_);
+    else {
+        // plays (miss) sound when ball is not clicked
+        mixer().play_effect(miss_sound_);
+    }
 }
 
 std::string

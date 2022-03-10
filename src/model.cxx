@@ -22,16 +22,39 @@ Model::delete_ball(Position posn, Position displacement)
             return true;
         }
         else {
-            std::cout << "Crosshair: " << posn << "\n";
+            /*std::cout << "Crosshair: " << posn << "\n";
             std::cout << distance(posn, (*it).get_view_center(displacement)
             ) << "\n";
             std::cout << "Ball: " << (*it).get_view_center(displacement) <<
-            "\n";
+            "\n";*/
             ++it;
         }
     }
     return false;
 
+}
+
+bool
+Model::select_option(Position posn, Position displacement)
+{
+    // iterates through options
+    for (std::vector<Option>::iterator it = menu_.get_options().begin(); it
+    != menu_.get_options().end();) {
+        if (distance(posn, (*it).get_center((*it).get_box_pos_(),
+                                            displacement)) < 5) {
+            //TODO: fix magic # (5)
+            std::cout << "Bool: " << (*it).is_selected() << "\n";
+            (*it).set_selected(!(*it).is_selected());
+            return true;
+        } else {
+            std::cout << "Pos: " << (*it).get_center((*it).get_box_pos_(),
+                                          displacement) << "\n";
+            std::cout << distance(posn, (*it).get_center((*it).get_box_pos_(),
+                                                         displacement)) << "\n";
+            ++it;
+        }
+    }
+    return false;
 }
 
 /*

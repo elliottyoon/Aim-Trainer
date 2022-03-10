@@ -5,7 +5,7 @@
 #include "option.hxx"
 Option::Option(Dims dimensions, Position pos, std::string name)
     : dimensions_(dimensions)
-    , is_selected_(false)
+    , is_selected_(true)
     , name_(name)
     , text_pos_(pos)
     , box_pos_{text_pos_.x + 60, text_pos_.y + 20}

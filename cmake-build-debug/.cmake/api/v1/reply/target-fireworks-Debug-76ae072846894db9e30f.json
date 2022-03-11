@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : ".cs211/lib/ge211/example/fireworks.exe"
-		},
-		{
-			"path" : ".cs211/lib/ge211/example/fireworks.pdb"
+			"path" : ".cs211/lib/ge211/example/fireworks"
 		}
 	],
 	"backtrace" : 1,
@@ -66,7 +63,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk"
 				},
 				{
 					"backtrace" : 4,
@@ -85,17 +82,17 @@
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/../include"
+					"path" : "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/../include"
 				},
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "C:/Users/Graham/Documents/GitHub/Aim-Trainer/cmake-build-debug/.cs211/lib/ge211/src/../include"
+					"path" : "/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/src/../include"
 				},
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "C:/MinGW/include/SDL2"
+					"path" : "/usr/local/include/SDL2"
 				}
 			],
 			"language" : "CXX",
@@ -132,7 +129,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Program Files (x86)/game"
+			"path" : "/usr/local"
 		}
 	},
 	"link" : 
@@ -149,42 +146,34 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "..\\src\\libge211.a",
+				"fragment" : "../src/libge211.a",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "-lmingw32",
+				"fragment" : "/usr/local/lib/libSDL2.dylib",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "-mwindows",
+				"fragment" : "-framework Cocoa",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "C:\\MinGW\\lib\\libSDL2.dll.a",
+				"fragment" : "/usr/local/lib/libSDL2_image.dylib",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "C:\\MinGW\\lib\\libSDL2_image.dll.a",
+				"fragment" : "/usr/local/lib/libSDL2_mixer.dylib",
 				"role" : "libraries"
 			},
 			{
-				"fragment" : "C:\\MinGW\\lib\\libSDL2_mixer.dll.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "C:\\MinGW\\lib\\libSDL2_ttf.dll.a",
-				"role" : "libraries"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"fragment" : "/usr/local/lib/libSDL2_ttf.dylib",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "fireworks",
-	"nameOnDisk" : "fireworks.exe",
+	"nameOnDisk" : "fireworks",
 	"paths" : 
 	{
 		"build" : ".cs211/lib/ge211/example",

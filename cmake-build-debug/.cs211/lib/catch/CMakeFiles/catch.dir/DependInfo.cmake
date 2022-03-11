@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/src/ball.cxx" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.obj" "gcc" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/src/crosshair.cxx" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/crosshair.cxx.obj" "gcc" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/crosshair.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/src/menu.cxx" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/menu.cxx.obj" "gcc" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/menu.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/catch/src/catch.cxx" ".cs211/lib/catch/CMakeFiles/catch.dir/src/catch.cxx.obj" "gcc" ".cs211/lib/catch/CMakeFiles/catch.dir/src/catch.cxx.obj.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.cxx" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o" "gcc" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/ball.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/crosshair.cxx" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/crosshair.cxx.o" "gcc" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/crosshair.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.cxx" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/menu.cxx.o" "gcc" ".cs211/lib/catch/CMakeFiles/catch.dir/__/__/__/src/menu.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/catch/src/catch.cxx" ".cs211/lib/catch/CMakeFiles/catch.dir/src/catch.cxx.o" "gcc" ".cs211/lib/catch/CMakeFiles/catch.dir/src/catch.cxx.o.d"
   )
 
 # Targets to which this target links.

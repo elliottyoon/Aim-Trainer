@@ -8,19 +8,19 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_audio.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_audio.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_audio.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_base.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_base.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_base.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_color.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_color.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_color.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_engine.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_engine.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_engine.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_error.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_error.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_error.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_event.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_event.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_event.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_geometry.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_geometry.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_geometry.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_random.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_random.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_random.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_render.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_render.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_render.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_resource.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_resource.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_resource.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_session.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_session.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_session.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_sprites.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_sprites.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_sprites.cxx.obj.d"
-  "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/ge211_window.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_window.cxx.obj" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_window.cxx.obj.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_audio.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_audio.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_audio.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_base.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_base.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_base.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_color.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_color.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_color.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_engine.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_engine.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_engine.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_error.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_error.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_error.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_event.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_event.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_event.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_geometry.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_geometry.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_geometry.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_random.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_random.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_random.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_render.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_render.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_render.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_resource.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_resource.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_resource.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_session.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_session.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_session.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_sprites.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_sprites.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_sprites.cxx.o.d"
+  "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/ge211_window.cxx" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_window.cxx.o" "gcc" ".cs211/lib/ge211/src/CMakeFiles/ge211.dir/ge211_window.cxx.o.d"
   )
 
 # Targets to which this target links.

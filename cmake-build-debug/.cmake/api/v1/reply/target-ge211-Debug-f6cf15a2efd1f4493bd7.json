@@ -94,7 +94,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk"
 				},
 				{
 					"backtrace" : 6,
@@ -116,23 +116,23 @@
 			[
 				{
 					"backtrace" : 7,
-					"define" : "GE211_RESOURCES=\"C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/../Resources/\",\"C:/Program Files (x86)/game/share/ge211/\""
+					"define" : "GE211_RESOURCES=\"/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/../Resources/\",\"/usr/local/share/ge211/\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 8,
-					"path" : "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/src/../include"
+					"path" : "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/src/../include"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "C:/MinGW/include/SDL2"
+					"path" : "/usr/local/include/SDL2"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
+					"path" : "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/3rdparty/utf8-cpp/include"
 				}
 			],
 			"language" : "CXX",
@@ -174,7 +174,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Program Files (x86)/game"
+			"path" : "/usr/local"
 		}
 	},
 	"name" : "ge211",

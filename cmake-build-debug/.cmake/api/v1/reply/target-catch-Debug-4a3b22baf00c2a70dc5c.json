@@ -13,7 +13,8 @@
 		[
 			"add_library",
 			"install",
-			"target_include_directories"
+			"target_include_directories",
+			"target_compile_features"
 		],
 		"files" : 
 		[
@@ -41,6 +42,12 @@
 				"file" : 0,
 				"line" : 25,
 				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
 			}
 		]
 	},
@@ -50,17 +57,28 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk"
+				},
+				{
+					"fragment" : "-std=c++14"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/Graham/Documents/GitHub/Aim-Trainer/.cs211/lib/catch/include"
+					"path" : "/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/catch/include"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					4
+				],
+				"standard" : "14"
+			},
 			"sourceIndexes" : 
 			[
 				1,
@@ -82,7 +100,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Program Files (x86)/game"
+			"path" : "/usr/local"
 		}
 	},
 	"name" : "catch",

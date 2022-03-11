@@ -30,7 +30,7 @@
 			"destination" : "bin",
 			"paths" : 
 			[
-				".cs211/lib/ge211/example/fireworks.exe"
+				".cs211/lib/ge211/example/fireworks"
 			],
 			"targetId" : "fireworks::@7a7c4f16a1d6abcd2711",
 			"targetIndex" : 1,

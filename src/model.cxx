@@ -3,9 +3,12 @@
 
 using Position = ge211::Posn<int>;
 
-Model::Model(int width, int height, int gamemode)
+Model::Model(int width, int height, int gamemode, int maxballs, int
+currentballs)
     : model_dims_{width, height}
     , game_mode(gamemode)
+    , max_balls(maxballs)
+    , active_balls(currentballs)
 {
 
 }
@@ -21,6 +24,7 @@ Model::delete_ball(Position posn, Position displacement)
         < (*it).get_ball_radius()) {
             // deletes ball
             it = balls_.erase(it);
+            active_balls--;
             return true;
         }
         else {
@@ -59,4 +63,23 @@ void Model::delete_expired()
         ++it;
 
     }
+}
+
+void Model::clear_balls()
+{
+    for (std::vector<ball>::iterator it = balls_.begin(); it != balls_.end();)
+    {
+        it = balls_.erase(it);
+        ++it;
+        break;
+    }
+}
+
+bool Model::check_overload(int num)
+{
+    if(num > max_balls)
+    {
+        return true;
+    }
+    return false;
 }

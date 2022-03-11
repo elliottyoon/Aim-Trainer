@@ -2,7 +2,7 @@
 #include <iostream>
 
 Controller::Controller()
-        : model_(500, 500, 0) // CHANGE THIS FROM MAGIC NUMBER LATER
+        : model_(500, 500, 0, 5, 0) // CHANGE THIS FROM MAGIC NUMBER LATER
         , view_(model_)
         , time_elapsed_(0)
         , mouse_posn_(view_.get_crosshair_center_posn())
@@ -13,6 +13,7 @@ Controller::Controller()
         , miss_sound_("ABMiss.ogg", mixer())
 {
 }
+int delete_time = 60;
 
 void
 Controller::draw(ge211::Sprite_set& set)
@@ -24,12 +25,25 @@ Controller::draw(ge211::Sprite_set& set)
     // keeps track of time passed
     time_elapsed_++;
     int global_lifespan = -1;
+
+
     //when mode1 is engaged, set global_lifespan = to 300, so that each ball
     // made will have an intial lifespan of 5 seconds or so, then we will
     // call increment on each ball whenever that will happen
+
     if(model_.get_game_mode() == 1){
         global_lifespan = 60;
         model_.delete_expired();
+    } else if (model_.get_game_mode() == 2){
+
+        if(delete_time > 0){
+            model_.clear_balls();
+            delete_time--;
+            model_.set_active_balls(0);
+        } else if(model_.check_overload(model_.get_active_balls())){
+            printf("you lose");
+            quit();
+        }
     }
 
     if (time_elapsed_ % ball_freq_ == 0) {
@@ -71,6 +85,43 @@ Controller::on_key(ge211::Key key)
     if (key == ge211::Key::code('1')) {
         model_.change_game_mode(1);
     }
+
+    if (key == ge211::Key::code('2')) {
+        model_.change_game_mode(2);
+    }
+
+    if (key == ge211::Key::code('3')) {
+        model_.set_max_balls(3);
+    }
+
+    if (key == ge211::Key::code('4')) {
+        model_.set_max_balls(4);
+    }
+
+    if (key == ge211::Key::code('5')) {
+        model_.set_max_balls(5);
+    }
+
+    if (key == ge211::Key::code('6')) {
+        model_.set_max_balls(6);
+    }
+
+    if (key == ge211::Key::code('7')) {
+        model_.set_max_balls(7);
+    }
+
+    if (key == ge211::Key::code('8')) {
+        model_.set_max_balls(8);
+    }
+
+    if (key == ge211::Key::code('9')) {
+        model_.set_max_balls(9);
+    }
+
+    if (key == ge211::Key::code('0')) {
+        model_.set_max_balls(10);
+    }
+
 
 }
 

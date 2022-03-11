@@ -84,10 +84,14 @@ Controller::on_key(ge211::Key key)
 
     if (key == ge211::Key::code('1')) {
         model_.change_game_mode(1);
+        time_elapsed_ = 0;
+        score_ = 0;
     }
 
     if (key == ge211::Key::code('2')) {
         model_.change_game_mode(2);
+        time_elapsed_ = 0;
+        score_ = 0;
     }
 
     if (key == ge211::Key::code('3')) {

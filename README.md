@@ -6,8 +6,8 @@ the ball, increment the score, and play a fun sound!
 (Missing will result in a sad sound)
 
 1. Pressing the `1` key on the keyboard will enter gamemode 1
-2. Pressing the `2` key on the keyboard will enter gamemode 2. Notice when a player loses in gamemode 2, the
-program just exits.
+2. Pressing the `2` key on the keyboard will enter gamemode 2. Notice when a player loses, the
+program exits and prints "you lose" to console.
 3. Before entering gamemode 2, user can hit keys `3` - `9`
 which sets the maximum number of balls on the screen.
 

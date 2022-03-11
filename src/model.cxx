@@ -28,11 +28,6 @@ Model::delete_ball(Position posn, Position displacement)
             return true;
         }
         else {
-            std::cout << "Crosshair: " << posn << "\n";
-            std::cout << distance(posn, (*it).get_view_center(displacement)
-            ) << "\n";
-            std::cout << "Ball: " << (*it).get_view_center(displacement) <<
-            "\n";
             ++it;
         }
     }

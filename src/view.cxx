@@ -10,8 +10,8 @@ View::View(Model& model)
                              - (50 / 2)),
                       (int) ((model_.get_model_dims().height / 2)
                              - (50 / 2))},
-                     // TODO: change magic number 50 to crosshair_dims
-                     //  .width/height
+                // TODO: change magic number 50 to crosshair_dims
+                //  .width/height
                      {(int) (model_.get_model_dims().width / 2),
                       (int) (model_.get_model_dims().height / 2)},
                      "crosshair.png",
@@ -47,16 +47,13 @@ time_elapsed)
     for (ball ball_individual: model_.get_balls()) {
         // TODO: this is for debugging
         if (model_.distance(crosshair_.get_center_coords(), ball_individual
-        .get_view_center(displacement)) < 5) {
+                .get_view_center(displacement)) < 5) {
             set.add_sprite(debug_ball_sprite_,
                            ball_individual.get_view_position(displacement),
                            2);
         } else {
             set.add_sprite(ball_sprite_,
-                       ball_individual.get_view_position(displacement),1);
+                           ball_individual.get_view_position(displacement),1);
         }
     }
 }
-
-
-

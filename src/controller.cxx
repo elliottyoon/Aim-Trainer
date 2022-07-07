@@ -42,7 +42,7 @@ Controller::draw(ge211::Sprite_set& set)
             model_.set_active_balls(0);
         } else if(model_.check_overload(model_.get_active_balls())){
             std::cout << "You lose!\n" << "Score: " << score_ << "\nTime: "
-            << time_elapsed_ / 60 << " seconds\n";
+                      << time_elapsed_ / 60 << " seconds\n";
             quit();
         }
     }

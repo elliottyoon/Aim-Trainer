@@ -27,8 +27,4 @@ private:
     // time elapsed
     ge211::Text_sprite time_sprite_;
     Position time_position_;
-
-
-
-
 };

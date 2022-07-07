@@ -49,7 +49,7 @@ public:
     // Adds ball to the list of balls
     void add_ball(ball new_ball)
     { balls_.push_back(new_ball);
-      active_balls++;}
+        active_balls++;}
 
     // checks if input position resides within a ball
     // if so, deletes the ball, returns true. returns false otherwise
@@ -65,7 +65,7 @@ public:
     float distance(Position pos1, Position pos2)
     {
         return std::sqrt(std::pow(pos1.x - pos2.x, 2)
-                       + std::pow(pos1.y - pos2.y,2));
+                         + std::pow(pos1.y - pos2.y,2));
     }
 
     // shifts position according to perspective shift

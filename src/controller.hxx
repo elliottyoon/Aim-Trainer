@@ -27,14 +27,13 @@ protected:
 private:
     Model model_;
     View view_;
-
-    int ball_freq_; // how many 1/60th seconds in between balls being placed
     int time_elapsed_;
+    Position mouse_posn_;
+    Position displacement_;
+    int ball_freq_; // how many 1/60th seconds in between balls being placed
     int score_;
 
 
-    Position displacement_;
-    Position mouse_posn_;
 
     ge211::Sound_effect hit_sound_;
     ge211::Sound_effect miss_sound_;

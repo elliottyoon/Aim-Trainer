@@ -348,15 +348,6 @@ ge211_examples_IS_TOP_LEVEL:STATIC=OFF
 ge211_examples_SOURCE_DIR:STATIC=/Users/elliottyoon/Desktop/CS211/AimTrainer/.cs211/lib/ge211/example
 
 //Value Computed by CMake
-motion-planning-example_BINARY_DIR:STATIC=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug
-
-//Value Computed by CMake
-motion-planning-example_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-motion-planning-example_SOURCE_DIR:STATIC=/Users/elliottyoon/Desktop/CS211/AimTrainer
-
-//Value Computed by CMake
 utf8-cpp_BINARY_DIR:STATIC=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/3rdparty/utf8-cpp
 
 //Value Computed by CMake

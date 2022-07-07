@@ -125,24 +125,10 @@ CMakeFiles/game.dir/src/menu.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/menu.cxx.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.cxx -o CMakeFiles/game.dir/src/menu.cxx.s
 
-CMakeFiles/game.dir/src/option.cxx.o: CMakeFiles/game.dir/flags.make
-CMakeFiles/game.dir/src/option.cxx.o: ../src/option.cxx
-CMakeFiles/game.dir/src/option.cxx.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/option.cxx.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/option.cxx.o -MF CMakeFiles/game.dir/src/option.cxx.o.d -o CMakeFiles/game.dir/src/option.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/option.cxx
-
-CMakeFiles/game.dir/src/option.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/option.cxx.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/elliottyoon/Desktop/CS211/AimTrainer/src/option.cxx > CMakeFiles/game.dir/src/option.cxx.i
-
-CMakeFiles/game.dir/src/option.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/option.cxx.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elliottyoon/Desktop/CS211/AimTrainer/src/option.cxx -o CMakeFiles/game.dir/src/option.cxx.s
-
 CMakeFiles/game.dir/src/view.cxx.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/view.cxx.o: ../src/view.cxx
 CMakeFiles/game.dir/src/view.cxx.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/view.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/view.cxx.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/view.cxx.o -MF CMakeFiles/game.dir/src/view.cxx.o.d -o CMakeFiles/game.dir/src/view.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/view.cxx
 
 CMakeFiles/game.dir/src/view.cxx.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/game.dir/src/view.cxx.s: cmake_force
 CMakeFiles/game.dir/src/controller.cxx.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/controller.cxx.o: ../src/controller.cxx
 CMakeFiles/game.dir/src/controller.cxx.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/src/controller.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/controller.cxx.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/controller.cxx.o -MF CMakeFiles/game.dir/src/controller.cxx.o.d -o CMakeFiles/game.dir/src/controller.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/controller.cxx
 
 CMakeFiles/game.dir/src/controller.cxx.i: cmake_force
@@ -170,7 +156,7 @@ CMakeFiles/game.dir/src/controller.cxx.s: cmake_force
 CMakeFiles/game.dir/src/main.cxx.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/main.cxx.o: ../src/main.cxx
 CMakeFiles/game.dir/src/main.cxx.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/game.dir/src/main.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/game.dir/src/main.cxx.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/main.cxx.o -MF CMakeFiles/game.dir/src/main.cxx.o.d -o CMakeFiles/game.dir/src/main.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/main.cxx
 
 CMakeFiles/game.dir/src/main.cxx.i: cmake_force
@@ -187,7 +173,6 @@ game_OBJECTS = \
 "CMakeFiles/game.dir/src/ball.cxx.o" \
 "CMakeFiles/game.dir/src/crosshair.cxx.o" \
 "CMakeFiles/game.dir/src/menu.cxx.o" \
-"CMakeFiles/game.dir/src/option.cxx.o" \
 "CMakeFiles/game.dir/src/view.cxx.o" \
 "CMakeFiles/game.dir/src/controller.cxx.o" \
 "CMakeFiles/game.dir/src/main.cxx.o"
@@ -199,7 +184,6 @@ game: CMakeFiles/game.dir/src/model.cxx.o
 game: CMakeFiles/game.dir/src/ball.cxx.o
 game: CMakeFiles/game.dir/src/crosshair.cxx.o
 game: CMakeFiles/game.dir/src/menu.cxx.o
-game: CMakeFiles/game.dir/src/option.cxx.o
 game: CMakeFiles/game.dir/src/view.cxx.o
 game: CMakeFiles/game.dir/src/controller.cxx.o
 game: CMakeFiles/game.dir/src/main.cxx.o
@@ -210,7 +194,7 @@ game: /usr/local/lib/libSDL2_image.dylib
 game: /usr/local/lib/libSDL2_mixer.dylib
 game: /usr/local/lib/libSDL2_ttf.dylib
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

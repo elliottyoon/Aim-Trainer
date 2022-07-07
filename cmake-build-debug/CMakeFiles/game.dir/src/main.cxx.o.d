@@ -289,6 +289,4 @@ CMakeFiles/game.dir/src/main.cxx.o: \
   /Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/.cs211/lib/ge211/src/../include/ge211_version.hxx \
   /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.hxx \
   /Users/elliottyoon/Desktop/CS211/AimTrainer/src/crosshair.hxx \
-  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.hxx \
-  /Users/elliottyoon/Desktop/CS211/AimTrainer/src/option.hxx \
   /Users/elliottyoon/Desktop/CS211/AimTrainer/src/view.hxx

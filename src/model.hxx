@@ -3,9 +3,7 @@
 #include <ge211.hxx>
 #include "ball.hxx"
 #include "crosshair.hxx"
-#include "menu.hxx"
 #include <cmath> // for sqrt
-
 
 using dims = ge211::Dims<int>;
 
@@ -14,7 +12,31 @@ using Position = ge211::Posn<int>;
 class Model
 {
 public:
-    explicit Model(int width, int height);
+    explicit Model(int width, int height, int gamemode, int maxballs, int
+    currentballs);
+
+    //sets max balls
+    void set_max_balls(int balls){
+        max_balls = balls;
+    }
+
+    //get active balls
+    int get_active_balls(){
+        return active_balls;
+    }
+
+    //set active balls directly
+    void set_active_balls(int io){
+        active_balls = io;
+    }
+
+    // Change game mode
+    void change_game_mode(int gm)
+    {game_mode = gm;}
+
+    // Return game mode
+    int get_game_mode() const
+    {return game_mode;}
 
     // Returns the dimensions of the screen
     dims get_model_dims() const
@@ -24,20 +46,20 @@ public:
     std::vector<ball> get_balls() const
     { return balls_; }
 
-    // Returns the list of options
-    std::vector<Option> get_options() const
-    { return menu_.get_options(); }
-
     // Adds ball to the list of balls
     void add_ball(ball new_ball)
-    { balls_.push_back(new_ball); }
+    { balls_.push_back(new_ball);
+      active_balls++;}
 
     // checks if input position resides within a ball
     // if so, deletes the ball, returns true. returns false otherwise
     bool delete_ball(Position posn, Position displacement);
 
-    // select/deselect option
-    bool select_option(Position posn, Position displacement);
+    void delete_expired();
+
+    void clear_balls();
+
+    bool check_overload(int num);
 
     // returns Euclidean distance between two positions
     float distance(Position pos1, Position pos2)
@@ -55,8 +77,9 @@ public:
 private:
     std::vector<ball> balls_; // list of all the balls in play
     dims model_dims_;
-    Menu menu_;
-
+    int game_mode;
+    int max_balls;
+    int active_balls;
 
 
 

@@ -69,10 +69,24 @@ include CMakeFiles/model_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/model_test.dir/flags.make
 
+CMakeFiles/model_test.dir/test/model_test.cxx.o: CMakeFiles/model_test.dir/flags.make
+CMakeFiles/model_test.dir/test/model_test.cxx.o: ../test/model_test.cxx
+CMakeFiles/model_test.dir/test/model_test.cxx.o: CMakeFiles/model_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/model_test.dir/test/model_test.cxx.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/test/model_test.cxx.o -MF CMakeFiles/model_test.dir/test/model_test.cxx.o.d -o CMakeFiles/model_test.dir/test/model_test.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/test/model_test.cxx
+
+CMakeFiles/model_test.dir/test/model_test.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/model_test.dir/test/model_test.cxx.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/elliottyoon/Desktop/CS211/AimTrainer/test/model_test.cxx > CMakeFiles/model_test.dir/test/model_test.cxx.i
+
+CMakeFiles/model_test.dir/test/model_test.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/model_test.dir/test/model_test.cxx.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elliottyoon/Desktop/CS211/AimTrainer/test/model_test.cxx -o CMakeFiles/model_test.dir/test/model_test.cxx.s
+
 CMakeFiles/model_test.dir/src/model.cxx.o: CMakeFiles/model_test.dir/flags.make
 CMakeFiles/model_test.dir/src/model.cxx.o: ../src/model.cxx
 CMakeFiles/model_test.dir/src/model.cxx.o: CMakeFiles/model_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/model_test.dir/src/model.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/model_test.dir/src/model.cxx.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/src/model.cxx.o -MF CMakeFiles/model_test.dir/src/model.cxx.o.d -o CMakeFiles/model_test.dir/src/model.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/model.cxx
 
 CMakeFiles/model_test.dir/src/model.cxx.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/model_test.dir/src/model.cxx.s: cmake_force
 CMakeFiles/model_test.dir/src/ball.cxx.o: CMakeFiles/model_test.dir/flags.make
 CMakeFiles/model_test.dir/src/ball.cxx.o: ../src/ball.cxx
 CMakeFiles/model_test.dir/src/ball.cxx.o: CMakeFiles/model_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/model_test.dir/src/ball.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/model_test.dir/src/ball.cxx.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/src/ball.cxx.o -MF CMakeFiles/model_test.dir/src/ball.cxx.o.d -o CMakeFiles/model_test.dir/src/ball.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/ball.cxx
 
 CMakeFiles/model_test.dir/src/ball.cxx.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/model_test.dir/src/ball.cxx.s: cmake_force
 CMakeFiles/model_test.dir/src/crosshair.cxx.o: CMakeFiles/model_test.dir/flags.make
 CMakeFiles/model_test.dir/src/crosshair.cxx.o: ../src/crosshair.cxx
 CMakeFiles/model_test.dir/src/crosshair.cxx.o: CMakeFiles/model_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/model_test.dir/src/crosshair.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/model_test.dir/src/crosshair.cxx.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/src/crosshair.cxx.o -MF CMakeFiles/model_test.dir/src/crosshair.cxx.o.d -o CMakeFiles/model_test.dir/src/crosshair.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/crosshair.cxx
 
 CMakeFiles/model_test.dir/src/crosshair.cxx.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/model_test.dir/src/crosshair.cxx.s: cmake_force
 CMakeFiles/model_test.dir/src/menu.cxx.o: CMakeFiles/model_test.dir/flags.make
 CMakeFiles/model_test.dir/src/menu.cxx.o: ../src/menu.cxx
 CMakeFiles/model_test.dir/src/menu.cxx.o: CMakeFiles/model_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/model_test.dir/src/menu.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/model_test.dir/src/menu.cxx.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/src/menu.cxx.o -MF CMakeFiles/model_test.dir/src/menu.cxx.o.d -o CMakeFiles/model_test.dir/src/menu.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.cxx
 
 CMakeFiles/model_test.dir/src/menu.cxx.i: cmake_force
@@ -125,52 +139,22 @@ CMakeFiles/model_test.dir/src/menu.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/model_test.dir/src/menu.cxx.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elliottyoon/Desktop/CS211/AimTrainer/src/menu.cxx -o CMakeFiles/model_test.dir/src/menu.cxx.s
 
-CMakeFiles/model_test.dir/src/option.cxx.o: CMakeFiles/model_test.dir/flags.make
-CMakeFiles/model_test.dir/src/option.cxx.o: ../src/option.cxx
-CMakeFiles/model_test.dir/src/option.cxx.o: CMakeFiles/model_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/model_test.dir/src/option.cxx.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/src/option.cxx.o -MF CMakeFiles/model_test.dir/src/option.cxx.o.d -o CMakeFiles/model_test.dir/src/option.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/src/option.cxx
-
-CMakeFiles/model_test.dir/src/option.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/model_test.dir/src/option.cxx.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/elliottyoon/Desktop/CS211/AimTrainer/src/option.cxx > CMakeFiles/model_test.dir/src/option.cxx.i
-
-CMakeFiles/model_test.dir/src/option.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/model_test.dir/src/option.cxx.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elliottyoon/Desktop/CS211/AimTrainer/src/option.cxx -o CMakeFiles/model_test.dir/src/option.cxx.s
-
-CMakeFiles/model_test.dir/test/model_test.cxx.o: CMakeFiles/model_test.dir/flags.make
-CMakeFiles/model_test.dir/test/model_test.cxx.o: ../test/model_test.cxx
-CMakeFiles/model_test.dir/test/model_test.cxx.o: CMakeFiles/model_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/model_test.dir/test/model_test.cxx.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/model_test.dir/test/model_test.cxx.o -MF CMakeFiles/model_test.dir/test/model_test.cxx.o.d -o CMakeFiles/model_test.dir/test/model_test.cxx.o -c /Users/elliottyoon/Desktop/CS211/AimTrainer/test/model_test.cxx
-
-CMakeFiles/model_test.dir/test/model_test.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/model_test.dir/test/model_test.cxx.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/elliottyoon/Desktop/CS211/AimTrainer/test/model_test.cxx > CMakeFiles/model_test.dir/test/model_test.cxx.i
-
-CMakeFiles/model_test.dir/test/model_test.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/model_test.dir/test/model_test.cxx.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elliottyoon/Desktop/CS211/AimTrainer/test/model_test.cxx -o CMakeFiles/model_test.dir/test/model_test.cxx.s
-
 # Object files for target model_test
 model_test_OBJECTS = \
+"CMakeFiles/model_test.dir/test/model_test.cxx.o" \
 "CMakeFiles/model_test.dir/src/model.cxx.o" \
 "CMakeFiles/model_test.dir/src/ball.cxx.o" \
 "CMakeFiles/model_test.dir/src/crosshair.cxx.o" \
-"CMakeFiles/model_test.dir/src/menu.cxx.o" \
-"CMakeFiles/model_test.dir/src/option.cxx.o" \
-"CMakeFiles/model_test.dir/test/model_test.cxx.o"
+"CMakeFiles/model_test.dir/src/menu.cxx.o"
 
 # External object files for target model_test
 model_test_EXTERNAL_OBJECTS =
 
+model_test: CMakeFiles/model_test.dir/test/model_test.cxx.o
 model_test: CMakeFiles/model_test.dir/src/model.cxx.o
 model_test: CMakeFiles/model_test.dir/src/ball.cxx.o
 model_test: CMakeFiles/model_test.dir/src/crosshair.cxx.o
 model_test: CMakeFiles/model_test.dir/src/menu.cxx.o
-model_test: CMakeFiles/model_test.dir/src/option.cxx.o
-model_test: CMakeFiles/model_test.dir/test/model_test.cxx.o
 model_test: CMakeFiles/model_test.dir/build.make
 model_test: .cs211/lib/catch/libcatch.a
 model_test: .cs211/lib/ge211/src/libge211.a
@@ -179,7 +163,7 @@ model_test: /usr/local/lib/libSDL2_image.dylib
 model_test: /usr/local/lib/libSDL2_mixer.dylib
 model_test: /usr/local/lib/libSDL2_ttf.dylib
 model_test: CMakeFiles/model_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable model_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/elliottyoon/Desktop/CS211/AimTrainer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable model_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/model_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

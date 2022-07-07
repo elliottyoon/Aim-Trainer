@@ -9,11 +9,9 @@ include(.cs211/cmake/CMakeLists.txt)
 # TODO: PUT ADDITIONAL MODEL .cxx FILES IN THIS LIST:
 set(MODEL_SRC
         src/model.cxx
-        src/ball.cxx
+        "../../../Downloads/final_project 2/src/ball.cxx"
         src/crosshair.cxx
-        src/menu.cxx
-        src/option.cxx
-        )
+        src/menu.cxx)
 
 # TODO: PUT ADDITIONAL NON-MODEL (UI) .cxx FILES IN THIS LIST:
 add_program(${GAME_EXE}
@@ -24,8 +22,8 @@ add_program(${GAME_EXE}
 target_link_libraries(${GAME_EXE} ge211)
 
 add_test_program(model_test
-        ${MODEL_SRC}
-        test/model_test.cxx)
+        test/model_test.cxx
+        ${MODEL_SRC})
 target_link_libraries(model_test ge211)
 
 # vim: ft=cmake

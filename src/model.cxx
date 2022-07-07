@@ -3,15 +3,20 @@
 
 using Position = ge211::Posn<int>;
 
-Model::Model(int width, int height)
+Model::Model(int width, int height, int gamemode, int maxballs, int
+currentballs)
     : model_dims_{width, height}
+    , game_mode(gamemode)
+    , max_balls(maxballs)
+    , active_balls(currentballs)
 {
-    menu_ = Menu();
+
 }
 
 bool
 Model::delete_ball(Position posn, Position displacement)
 {
+
     // iterates through balls.
     for (std::vector<ball>::iterator it = balls_.begin(); it != balls_.end();) {
         // if position is within the circumference of ball
@@ -19,14 +24,10 @@ Model::delete_ball(Position posn, Position displacement)
         < (*it).get_ball_radius()) {
             // deletes ball
             it = balls_.erase(it);
+            active_balls--;
             return true;
         }
         else {
-            /*std::cout << "Crosshair: " << posn << "\n";
-            std::cout << distance(posn, (*it).get_view_center(displacement)
-            ) << "\n";
-            std::cout << "Ball: " << (*it).get_view_center(displacement) <<
-            "\n";*/
             ++it;
         }
     }
@@ -34,42 +35,46 @@ Model::delete_ball(Position posn, Position displacement)
 
 }
 
-bool
-Model::select_option(Position posn, Position displacement)
+void Model::delete_expired()
 {
-    // iterates through options
-    for (std::vector<Option>::iterator it = menu_.get_options().begin(); it
-    != menu_.get_options().end();) {
-        if (distance(posn, (*it).get_center((*it).get_box_pos_(),
-                                            displacement)) < 5) {
-            //TODO: fix magic # (5)
-            std::cout << "Bool: " << (*it).is_selected() << "\n";
-            (*it).set_selected(!(*it).is_selected());
-            return true;
-        } else {
-            std::cout << "Pos: " << (*it).get_center((*it).get_box_pos_(),
-                                          displacement) << "\n";
-            std::cout << distance(posn, (*it).get_center((*it).get_box_pos_(),
-                                                         displacement)) << "\n";
-            ++it;
+    //iterates through the balls looking for expired balls, if in the
+    // gamemode which requires this.
+
+
+    for (std::vector<ball>::iterator it = balls_.begin(); it != balls_.end();)
+    {
+
+        //increments lifespan of each ball in the game each time draw is called
+        (*it).increment_lifespan();
+
+        //checks if any of the balls should be dead and removes them, also
+        // should clear the screen when switching modes as lifespan is
+        // typically intialized to -1
+
+        if((*it).get_ball_lifespan() <= 0){
+            it = balls_.erase(it);
+            break;
         }
+        ++it;
+
+    }
+}
+
+void Model::clear_balls()
+{
+    for (std::vector<ball>::iterator it = balls_.begin(); it != balls_.end();)
+    {
+        it = balls_.erase(it);
+        ++it;
+        break;
+    }
+}
+
+bool Model::check_overload(int num)
+{
+    if(num > max_balls)
+    {
+        return true;
     }
     return false;
 }
-
-/*
- *     // iterates through menu options
-    for (std::vector<Option>::iterator it2 = menu_.get_options().begin(); it2 !=
-    menu_.get_options().end();) {
-        if (distance(posn, (*it2).get_center((*it2).get_box_pos_(),
-                                             displacement)) < (*it2)
-                                             .get_dimensions().width &&
-                distance(posn, (*it2).get_center((*it2).get_box_pos_(),
-                                                 displacement)) < (*it2)
-                        .get_dimensions().height) {
-            (*it2).set_selected(!(*it2).is_selected());
-        }
-
-        ++it2;
-    }
- */

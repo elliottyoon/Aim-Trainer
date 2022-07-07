@@ -11,8 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/game.dir/src/menu.cxx.o.d"
   "CMakeFiles/game.dir/src/model.cxx.o"
   "CMakeFiles/game.dir/src/model.cxx.o.d"
-  "CMakeFiles/game.dir/src/option.cxx.o"
-  "CMakeFiles/game.dir/src/option.cxx.o.d"
   "CMakeFiles/game.dir/src/view.cxx.o"
   "CMakeFiles/game.dir/src/view.cxx.o.d"
   "game"
